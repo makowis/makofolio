@@ -1,3 +1,7 @@
+.avater {
+  max-width: 250px;
+}
+
 .circle_fl{
   display: inline-block;
   position: relative;

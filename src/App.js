@@ -12,14 +12,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <header className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div className="container">
-            <a className="navbar-brand" href="#">mako labo</a>
-          </div>
-        </header>
         <main>
           <div className="container-fluid bg-info p-5">
-            <img src={avatar} alt="mako_wismのアイコン" className="rounded-circle mx-auto d-block"/>
+            <img src={avatar} alt="mako_wisのアイコン" className="rounded-circle mx-auto d-block avater"/>
             <h1 className="text-center text-white">Makoto Henmi</h1>
             <section className="mt-3">
               <h2 className="text-center text-white">SNS Links</h2>
