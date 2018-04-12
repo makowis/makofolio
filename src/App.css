@@ -1,0 +1,44 @@
+.circle_fl{
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #FFF;
+  width: 50px;
+  height: 50px;
+  line-height: 30px;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  transition: .2s;
+  border: solid 5px #FFF;
+}
+.circle_fl .fa{
+  line-height: 30px;
+}
+.circle_fl:hover{
+  box-shadow: none;
+}
+
+.circle_fl.ftw{
+  background: #1da1f3;
+}
+
+.circle_fl.ffb{
+  background: #3b75d4;
+}
+
+.circle_fl.fpkt{
+  background: #ef4d4d;
+}
+
+.circle_fl.ffdly{
+  background: #7ece46;
+}
+
+.circle_fl.fgithub{
+  background: black;
+}
