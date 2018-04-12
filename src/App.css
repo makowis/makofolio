@@ -1,28 +1,48 @@
-.App {
+.avater {
+  max-width: 250px;
+}
+
+.circle_fl{
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #FFF;
+  width: 50px;
+  height: 50px;
+  line-height: 30px;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 50%;
   text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  transition: .2s;
+  border: solid 5px #FFF;
+}
+.circle_fl .fa{
+  line-height: 30px;
+}
+.circle_fl:hover{
+  box-shadow: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.circle_fl.ftw{
+  background: #1da1f3;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.circle_fl.ffb{
+  background: #3b75d4;
 }
 
-.App-title {
-  font-size: 1.5em;
+.circle_fl.fpkt{
+  background: #ef4d4d;
 }
 
-.App-intro {
-  font-size: large;
+.circle_fl.ffdly{
+  background: #7ece46;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.circle_fl.fgithub{
+  background: black;
 }
