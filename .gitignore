@@ -22,3 +22,7 @@ yarn-error.log*
 
 # idea
 .idea
+
+# firebase
+.firebaserc
+firebase.json
