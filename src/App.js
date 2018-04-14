@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import avatar from './img/avatar.bmp';
 import './App.css';
 import fontawesome from '@fortawesome/fontawesome'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import brands from '@fortawesome/fontawesome-free-brands'
 import {TwitterLinkButton, FacebookLinkButton, GithubLinkButton} from './components/SnsLinkButton/'
 
@@ -30,10 +29,8 @@ class App extends Component {
                   <GithubLinkButton url="https://github.com/makowis" />
                 </li>
               </ul>
-
             </section>
           </div>
-
         </main>
       </div>
     );
