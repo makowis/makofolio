@@ -1,0 +1,25 @@
+.SnsLinkButton{
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #FFF;
+  width: 50px;
+  height: 50px;
+  line-height: 30px;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  transition: .2s;
+  border: solid 5px #FFF;
+}
+.SnsLinkButton .fa{
+  line-height: 30px;
+}
+
+.SnsLinkButton.github{
+  background: black;
+}
