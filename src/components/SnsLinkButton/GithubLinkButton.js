@@ -6,9 +6,7 @@ const GithubLinkButton = (props) => {
   const btnstyle = {
     background: 'black',
   };
-  return (
-    <BaseButton url={props.url} icon="github" btnstyle={btnstyle} />
-  );
+  return <BaseButton url={props.url} icon="github" btnstyle={btnstyle} />;
 };
 
 export default GithubLinkButton;

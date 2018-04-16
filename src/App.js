@@ -3,16 +3,23 @@ import fontawesome from '@fortawesome/fontawesome';
 import brands from '@fortawesome/fontawesome-free-brands';
 import avatar from './img/avatar.bmp';
 import './App.css';
-import { TwitterLinkButton, FacebookLinkButton, GithubLinkButton } from './components/SnsLinkButton/';
+import {
+  TwitterLinkButton,
+  FacebookLinkButton,
+  GithubLinkButton,
+} from './components/SnsLinkButton/';
 
 fontawesome.library.add(brands);
-
 
 const App = () => (
   <div>
     <main>
       <div className="container-fluid bg-info p-5">
-        <img src={avatar} alt="mako_wisのアイコン" className="rounded-circle mx-auto d-block avater" />
+        <img
+          src={avatar}
+          alt="mako_wisのアイコン"
+          className="rounded-circle mx-auto d-block avater"
+        />
         <h1 className="text-center text-white">Makoto Henmi</h1>
         <section className="mt-3">
           <h2 className="text-center text-white">SNS Links</h2>
