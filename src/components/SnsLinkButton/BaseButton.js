@@ -1,12 +1,13 @@
-import React, {Component} from 'react'
-import './BaseButton.css'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+/* eslint-disable react/prop-types */
+import React from 'react';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import './BaseButton.css';
 
 
-const BaseButton = (props) => (
+const BaseButton = props => (
   <a href={props.url} className="SnsLinkButton" style={props.btnstyle}>
-    <FontAwesomeIcon icon={["fab", props.icon]} />
+    <FontAwesomeIcon icon={['fab', props.icon]} />
   </a>
-)
+);
 
-export default BaseButton
+export default BaseButton;
