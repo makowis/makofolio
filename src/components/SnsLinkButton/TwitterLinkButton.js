@@ -6,9 +6,7 @@ const TwitterLinkButton = (props) => {
   const btnstyle = {
     background: '#1da1f3',
   };
-  return (
-    <BaseButton url={props.url} icon="twitter" btnstyle={btnstyle} />
-  );
+  return <BaseButton url={props.url} icon="twitter" btnstyle={btnstyle} />;
 };
 
 export default TwitterLinkButton;
