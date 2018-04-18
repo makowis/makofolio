@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
+// @flow
 import React from 'react';
 import BaseButton from './BaseButton';
 
-const TwitterLinkButton = (props) => {
+const TwitterLinkButton = (props: { url: string }) => {
   const btnstyle = {
     background: '#1da1f3',
   };
