@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import fontawesome from '@fortawesome/fontawesome';
 import brands from '@fortawesome/fontawesome-free-brands';
