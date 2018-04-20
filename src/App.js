@@ -37,6 +37,23 @@ const App = () => (
           </ul>
         </section>
       </div>
+      <section className="text-center p-5">
+        <h2>Info</h2>
+        <p>
+          このサイトはポートフォリオというよりReactで何か作ってみようと思ってはじめた実験サイトです。
+        </p>
+        <p>
+          ソースコードは
+          <a href="https://github.com/makowis/makowis-portfolio">Github</a>
+          で公開しています。
+        </p>
+      </section>
+      <section className="text-center text-white bg-info p-5">
+        <h2>Special Thanks</h2>
+        <a href="https://github.com/eiel" className="h3">
+          eiel
+        </a>
+      </section>
     </main>
   </div>
 );
