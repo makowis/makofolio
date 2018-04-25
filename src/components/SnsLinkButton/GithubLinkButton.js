@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 // @flow
 import React from 'react';
 import BaseButton from './BaseButton';
