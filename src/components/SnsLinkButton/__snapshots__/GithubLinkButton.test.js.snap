@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders GithubLinkButton 1`] = `
+<a
+  className="SnsLinkButton"
+  href="https://github.com/makowis"
+  style={
+    Object {
+      "background": "black",
+    }
+  }
+/>
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders FacebookLinkButton 1`] = `
+<a
+  className="SnsLinkButton"
+  href="http://www.facebook.com/makoto.henmi"
+  style={
+    Object {
+      "background": "#3b75d4",
+    }
+  }
+/>
+`;
