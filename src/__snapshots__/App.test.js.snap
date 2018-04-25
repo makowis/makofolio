@@ -31,13 +31,8 @@ exports[`renders App 1`] = `
             className="list-inline-item"
           >
             <a
-              className="SnsLinkButton"
+              className={undefined}
               href="https://twitter.com/mako_wis"
-              style={
-                Object {
-                  "background": "#1da1f3",
-                }
-              }
             >
               <svg
                 aria-hidden="true"
@@ -61,13 +56,8 @@ exports[`renders App 1`] = `
             className="list-inline-item"
           >
             <a
-              className="SnsLinkButton"
+              className={undefined}
               href="https://www.facebook.com/makoto.henmi"
-              style={
-                Object {
-                  "background": "#3b75d4",
-                }
-              }
             >
               <svg
                 aria-hidden="true"
@@ -91,13 +81,8 @@ exports[`renders App 1`] = `
             className="list-inline-item"
           >
             <a
-              className="SnsLinkButton"
+              className={undefined}
               href="https://github.com/makowis"
-              style={
-                Object {
-                  "background": "black",
-                }
-              }
             >
               <svg
                 aria-hidden="true"

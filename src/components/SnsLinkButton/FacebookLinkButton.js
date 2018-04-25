@@ -1,13 +1,9 @@
 /* eslint-disable react/prop-types */
 // @flow
-import React from 'react';
 import BaseButton from './BaseButton';
+import { FacebookLinkButton as className } from './FacebookLinkButton.module.css';
 
-const FacebookLinkButton = (props: { url: string }) => {
-  const btnstyle = {
-    background: '#3b75d4',
-  };
-  return <BaseButton url={props.url} icon="facebook-f" btnstyle={btnstyle} />;
-};
+const FacebookLinkButton = ({ url }: { url: string }) =>
+  BaseButton({ className, url, icon: 'facebook-f' });
 
 export default FacebookLinkButton;

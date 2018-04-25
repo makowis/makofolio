@@ -1,4 +1,4 @@
-.SnsLinkButton{
+:local .BaseButton {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
@@ -15,11 +15,4 @@
   font-weight: bold;
   transition: .2s;
   border: solid 5px #FFF;
-}
-.SnsLinkButton .fa{
-  line-height: 30px;
-}
-
-.SnsLinkButton.github{
-  background: black;
 }

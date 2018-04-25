@@ -1,0 +1,5 @@
+:local .FacebookLinkButton {
+    composes: BaseButton from "./BaseButton.module.css";
+    line-height: 30px;
+    background: #3b75d4;
+}

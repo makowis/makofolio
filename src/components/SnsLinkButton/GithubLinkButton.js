@@ -1,12 +1,8 @@
 // @flow
-import React from 'react';
 import BaseButton from './BaseButton';
+import { GithubLinkButton as className } from './GithubLinkButton.module.css';
 
-const GithubLinkButton = (props: { url: string }) => {
-  const btnstyle = {
-    background: 'black',
-  };
-  return <BaseButton url={props.url} icon="github" btnstyle={btnstyle} />;
-};
+const GithubLinkButton = ({ url }: { url: string }) =>
+  BaseButton({ className, url, icon: 'github' });
 
 export default GithubLinkButton;

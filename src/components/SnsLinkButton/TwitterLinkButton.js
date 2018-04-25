@@ -1,12 +1,8 @@
 // @flow
-import React from 'react';
 import BaseButton from './BaseButton';
+import { TwitterLinkButton as className } from './TwitterLinkButton.module.css';
 
-const TwitterLinkButton = (props: { url: string }) => {
-  const btnstyle = {
-    background: '#1da1f3',
-  };
-  return <BaseButton url={props.url} icon="twitter" btnstyle={btnstyle} />;
-};
+const TwitterLinkButton = ({ url }: { url: string }) =>
+  BaseButton({ className, url, icon: 'twitter' });
 
 export default TwitterLinkButton;

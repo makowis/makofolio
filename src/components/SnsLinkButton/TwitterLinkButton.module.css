@@ -1,0 +1,5 @@
+:local .TwitterLinkButton {
+    composes: BaseButton from "./BaseButton.module.css";
+    background: #1da1f3;
+}
+

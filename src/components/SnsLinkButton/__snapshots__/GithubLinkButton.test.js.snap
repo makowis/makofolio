@@ -2,13 +2,8 @@
 
 exports[`renders GithubLinkButton 1`] = `
 <a
-  className="SnsLinkButton"
+  className={undefined}
   href="https://github.com/makowis"
-  style={
-    Object {
-      "background": "black",
-    }
-  }
 >
   <svg
     aria-hidden="true"
