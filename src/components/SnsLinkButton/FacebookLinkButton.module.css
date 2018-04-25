@@ -1,0 +1,4 @@
+:local .FacebookLinkButton {
+    composes: BaseButton from "./BaseButton.module.css";
+    background: #3b75d4;
+}

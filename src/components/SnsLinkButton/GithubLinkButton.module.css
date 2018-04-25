@@ -1,0 +1,4 @@
+:local .GithubLinkButton {
+    composes: BaseButton from "./BaseButton.module.css";
+    background: black;
+}

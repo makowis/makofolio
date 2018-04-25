@@ -2,13 +2,8 @@
 
 exports[`renders TwitterLinkButton 1`] = `
 <a
-  className="SnsLinkButton"
+  className={undefined}
   href="https://twitter.com/mako_wis"
-  style={
-    Object {
-      "background": "#1da1f3",
-    }
-  }
 >
   <svg
     aria-hidden="true"

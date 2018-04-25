@@ -2,13 +2,8 @@
 
 exports[`renders FacebookLinkButton 1`] = `
 <a
-  className="SnsLinkButton"
+  className={undefined}
   href="http://www.facebook.com/makoto.henmi"
-  style={
-    Object {
-      "background": "#3b75d4",
-    }
-  }
 >
   <svg
     aria-hidden="true"
