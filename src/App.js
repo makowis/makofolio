@@ -26,13 +26,13 @@ const App = () => (
           <h2 className="text-center text-white">SNS Links</h2>
           <ul className="list-inline text-center">
             <li className="list-inline-item">
-              <TwitterLinkButton url="https://twitter.com/mako_wis" />
+              <TwitterLinkButton twitterId="mako_wis" />
             </li>
             <li className="list-inline-item">
-              <FacebookLinkButton url="https://www.facebook.com/makoto.henmi" />
+              <FacebookLinkButton facebookId="makoto.henmi" />
             </li>
             <li className="list-inline-item">
-              <GithubLinkButton url="https://github.com/makowis" />
+              <GithubLinkButton githubId="makowis" />
             </li>
           </ul>
         </section>

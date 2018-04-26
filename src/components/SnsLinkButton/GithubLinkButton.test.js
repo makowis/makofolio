@@ -6,7 +6,7 @@ import GithubLinkButton from './GithubLinkButton';
 
 it('renders GithubLinkButton', () => {
   const tree = renderer
-    .create(<GithubLinkButton url="https://github.com/makowis" />)
+    .create(<GithubLinkButton githubId="makowis" />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -6,7 +6,7 @@ import FacebookLinkButton from './FacebookLinkButton';
 
 it('renders FacebookLinkButton', () => {
   const tree = renderer
-    .create(<FacebookLinkButton url="http://www.facebook.com/makoto.henmi" />)
+    .create(<FacebookLinkButton facebookId="makoto.henmi" />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
