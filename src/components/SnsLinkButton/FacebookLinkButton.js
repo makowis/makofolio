@@ -3,7 +3,9 @@
 import BaseButton from './BaseButton';
 import { FacebookLinkButton as className } from './FacebookLinkButton.module.css';
 
-const FacebookLinkButton = ({ url }: { url: string }) =>
-  BaseButton({ className, url, icon: 'facebook-f' });
+const idToUrl = (id: string) => `https://www.facebook.com/${id}`;
+
+const FacebookLinkButton = ({ facebookId }: { facebookId: string }) =>
+  BaseButton({ className, url: idToUrl(facebookId), icon: 'facebook-f' });
 
 export default FacebookLinkButton;

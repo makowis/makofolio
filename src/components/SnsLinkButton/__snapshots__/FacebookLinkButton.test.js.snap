@@ -3,7 +3,7 @@
 exports[`renders FacebookLinkButton 1`] = `
 <a
   className={undefined}
-  href="http://www.facebook.com/makoto.henmi"
+  href="https://www.facebook.com/makoto.henmi"
 >
   <svg
     aria-hidden="true"
