@@ -2,37 +2,39 @@
 import React from 'react';
 import fontawesome from '@fortawesome/fontawesome';
 import brands from '@fortawesome/fontawesome-free-brands';
-import avatar from './img/avatar.bmp';
 import './App.css';
 import {
   TwitterLinkButton,
   FacebookLinkButton,
   GithubLinkButton,
 } from './components/SnsLinkButton/';
+import person from './models/Person';
+
+import type { Person } from './models/Person';
 
 fontawesome.library.add(brands);
 
-const App = () => (
+const App = ({ avatar, nickname, name, twitter, facebook, github }: Person) => (
   <div>
     <main>
       <div className="container-fluid bg-info p-5">
         <img
           src={avatar}
-          alt="mako_wisのアイコン"
+          alt={`${nickname}のアイコン`}
           className="rounded-circle mx-auto d-block avater"
         />
-        <h1 className="text-center text-white">Makoto Henmi</h1>
+        <h1 className="text-center text-white">{name}</h1>
         <section className="mt-3">
           <h2 className="text-center text-white">SNS Links</h2>
           <ul className="list-inline text-center">
             <li className="list-inline-item">
-              <TwitterLinkButton twitterId="mako_wis" />
+              <TwitterLinkButton twitterId={twitter} />
             </li>
             <li className="list-inline-item">
-              <FacebookLinkButton facebookId="makoto.henmi" />
+              <FacebookLinkButton facebookId={facebook} />
             </li>
             <li className="list-inline-item">
-              <GithubLinkButton githubId="makowis" />
+              <GithubLinkButton githubId={github} />
             </li>
           </ul>
         </section>
@@ -58,4 +60,4 @@ const App = () => (
   </div>
 );
 
-export default App;
+export default () => App(person);
