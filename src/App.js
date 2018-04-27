@@ -3,42 +3,14 @@ import React from 'react';
 import fontawesome from '@fortawesome/fontawesome';
 import brands from '@fortawesome/fontawesome-free-brands';
 import './App.css';
-import {
-  TwitterLinkButton,
-  FacebookLinkButton,
-  GithubLinkButton,
-} from './components/SnsLinkButton/';
-import person from './models/Person';
-
-import type { Person } from './models/Person';
+import { Person } from './containers/Person';
 
 fontawesome.library.add(brands);
 
-const App = ({ avatar, nickname, name, twitter, facebook, github }: Person) => (
+const App = () => (
   <div>
     <main>
-      <div className="container-fluid bg-info p-5">
-        <img
-          src={avatar}
-          alt={`${nickname}のアイコン`}
-          className="rounded-circle mx-auto d-block avater"
-        />
-        <h1 className="text-center text-white">{name}</h1>
-        <section className="mt-3">
-          <h2 className="text-center text-white">SNS Links</h2>
-          <ul className="list-inline text-center">
-            <li className="list-inline-item">
-              <TwitterLinkButton twitterId={twitter} />
-            </li>
-            <li className="list-inline-item">
-              <FacebookLinkButton facebookId={facebook} />
-            </li>
-            <li className="list-inline-item">
-              <GithubLinkButton githubId={github} />
-            </li>
-          </ul>
-        </section>
-      </div>
+      <Person />
       <section className="text-center p-5">
         <h2>Info</h2>
         <p>
@@ -60,4 +32,4 @@ const App = ({ avatar, nickname, name, twitter, facebook, github }: Person) => (
   </div>
 );
 
-export default () => App(person);
+export default App;
