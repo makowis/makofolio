@@ -8,5 +8,6 @@
 
 [options]
 module.file_ext=.bmp
+module.file_ext=.js
 
 [strict]
