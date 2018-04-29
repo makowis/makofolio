@@ -1,7 +1,10 @@
 // @flow
+import { connect } from 'react-redux';
 import Component from '../components/Person';
-import person from '../models/Person';
+import type { State } from '../reducers/index';
 
-export const Person = () => Component(person);
+const mapStateToProps = ({ person }: State) => person;
+
+const Person = connect(mapStateToProps)(Component);
 
 export default Person;

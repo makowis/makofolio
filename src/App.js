@@ -3,7 +3,7 @@ import React from 'react';
 import fontawesome from '@fortawesome/fontawesome';
 import brands from '@fortawesome/fontawesome-free-brands';
 import './App.css';
-import { Person } from './containers/Person';
+import Person from './containers/Person';
 
 fontawesome.library.add(brands);
 
