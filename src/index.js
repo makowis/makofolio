@@ -1,9 +1,19 @@
 /* eslint-env browser */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import App from './App';
+import ConnectedApp from './App';
+import reducer from './reducers/index';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = createStore(reducer);
+const Application = (
+  <Provider {...{ store }}>
+    <ConnectedApp />
+  </Provider>
+);
+
+ReactDOM.render(Application, document.getElementById('root'));
 registerServiceWorker();

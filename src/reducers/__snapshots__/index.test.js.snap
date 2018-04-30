@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`root reducer 1`] = `
+Object {
+  "person": Object {
+    "avatar": "avatar.bmp",
+    "facebook": "makoto.henmi",
+    "github": "makowis",
+    "name": "Makoto Henmi",
+    "nickname": "mako_wis",
+    "twitter": "mako_wis",
+  },
+}
+`;
