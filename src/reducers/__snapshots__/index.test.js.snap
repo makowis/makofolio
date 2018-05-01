@@ -12,3 +12,16 @@ Object {
   },
 }
 `;
+
+exports[`root reducer change other person 1`] = `
+Object {
+  "person": Object {
+    "avatar": "https://pbs.twimg.com/profile_images/471280957119406080/LCUoaGga_400x400.png",
+    "facebook": "tomohiro.m0219",
+    "github": "moriC",
+    "name": "Tomohiro Morishita",
+    "nickname": "もりしー",
+    "twitter": "CentBoss",
+  },
+}
+`;
