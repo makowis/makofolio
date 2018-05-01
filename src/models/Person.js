@@ -20,4 +20,16 @@ export const mako_wis: Person = {
   github: 'makowis',
 };
 
+export const moriC: Person = {
+  avatar:
+    'https://pbs.twimg.com/profile_images/471280957119406080/LCUoaGga_400x400.png',
+  nickname: 'もりしー',
+  name: 'Tomohiro Morishita',
+  twitter: 'CentBoss',
+  facebook: 'tomohiro.m0219',
+  github: 'moriC',
+};
+
+export const persons = { mako_wis, moriC };
+
 export default mako_wis;
