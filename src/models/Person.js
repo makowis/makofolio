@@ -30,6 +30,16 @@ export const moriC: Person = {
   github: 'moriC',
 };
 
-export const persons = { mako_wis, moriC };
+export const eiel: Person = {
+  avatar:
+    'https://pbs.twimg.com/profile_images/2754435592/6fef2556bc06febd5c6ab4c24ae08282_400x400.jpeg',
+  nickname: 'eiel',
+  name: 'Tomohiko Himura',
+  twitter: 'eielh',
+  facebook: 'eielh',
+  github: 'eiel',
+};
+
+export const persons = { mako_wis, moriC, eiel };
 
 export default mako_wis;
