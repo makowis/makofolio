@@ -40,6 +40,6 @@ export const eiel: Person = {
   github: 'eiel',
 };
 
-export const persons = {mako_wis, moriC, eiel};
+export const persons = { mako_wis, moriC, eiel };
 
 export default mako_wis;
