@@ -1,15 +1,15 @@
 /* eslint-env browser */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import configureStore from './store/configureStore';
 import ConnectedApp from './App';
-import reducer from './reducers/index';
+import DevTools from './containers/DevTools';
 import registerServiceWorker from './registerServiceWorker';
 import { persons } from './models/Person';
 
-const store = createStore(reducer);
+const store = configureStore();
 
 const personId = window.location.pathname.substr(1);
 const person = persons[personId];
@@ -19,7 +19,10 @@ if (person) {
 
 const Application = (
   <Provider {...{ store }}>
-    <ConnectedApp />
+    <div>
+      <ConnectedApp />
+      <DevTools />
+    </div>
   </Provider>
 );
 
