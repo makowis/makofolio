@@ -3,6 +3,7 @@
 import avatar from '../img/avatar.bmp';
 
 export type Person = {
+  id: string,
   avatar: string,
   nickname: string,
   name: string,
@@ -12,6 +13,7 @@ export type Person = {
 };
 
 export const mako_wis: Person = {
+  id: 'mako_wis',
   avatar,
   nickname: 'mako_wis',
   name: 'Makoto Henmi',
@@ -21,6 +23,7 @@ export const mako_wis: Person = {
 };
 
 export const moriC: Person = {
+  id: 'moriC',
   avatar:
     'https://pbs.twimg.com/profile_images/471280957119406080/LCUoaGga_400x400.png',
   nickname: 'もりしー',
@@ -31,6 +34,7 @@ export const moriC: Person = {
 };
 
 export const eiel: Person = {
+  id: 'eiel',
   avatar:
     'https://pbs.twimg.com/profile_images/2754435592/6fef2556bc06febd5c6ab4c24ae08282_400x400.jpeg',
   nickname: 'eiel',
@@ -41,5 +45,7 @@ export const eiel: Person = {
 };
 
 export const persons = { mako_wis, moriC, eiel };
+
+export const developers: Person[] = [mako_wis, eiel];
 
 export default mako_wis;

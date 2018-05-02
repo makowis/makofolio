@@ -128,14 +128,38 @@ exports[`renders App 1`] = `
       className="text-center text-white bg-info p-5"
     >
       <h2>
-        Special Thanks
+        Developers
       </h2>
-      <a
-        className="h3"
-        href="https://github.com/eiel"
+      <div
+        className={undefined}
       >
-        eiel
-      </a>
+        <img
+          alt="Makoto Henmi"
+          className={undefined}
+          facebook="makoto.henmi"
+          github="makowis"
+          height={40}
+          id="mako_wis"
+          nickname="mako_wis"
+          onClick={[Function]}
+          src="avatar.bmp"
+          twitter="mako_wis"
+          width={40}
+        />
+        <img
+          alt="Tomohiko Himura"
+          className={undefined}
+          facebook="eielh"
+          github="eiel"
+          height={40}
+          id="eiel"
+          nickname="eiel"
+          onClick={[Function]}
+          src="https://pbs.twimg.com/profile_images/2754435592/6fef2556bc06febd5c6ab4c24ae08282_400x400.jpeg"
+          twitter="eielh"
+          width={40}
+        />
+      </div>
     </section>
   </main>
 </div>
