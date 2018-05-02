@@ -6,7 +6,11 @@ type Props = {
 };
 
 const Slides = ({ slides }: Props) => (
-  <ul>{slides.map((d) => <li>{d}</li>)}</ul>
+  <section>
+    <h2>Slides</h2>
+    {slides && slides.length > 0 && <ul>{slides.map((d) => <li>{d}</li>)}</ul>}
+    {slides}
+  </section>
 );
 
 export default Slides;
