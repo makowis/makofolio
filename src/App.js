@@ -19,7 +19,7 @@ const App = () => (
         </p>
         <p>
           ソースコードは
-          <a href="https://github.com/makowis/makowis-portfolio">Github</a>
+          <a href="https://github.com/makowis/makowis-portfolio">GitHub</a>
           で公開しています。
         </p>
       </section>
