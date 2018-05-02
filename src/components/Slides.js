@@ -7,10 +7,17 @@ type Props = {
 };
 
 const Slides = ({ slides }: Props) => (
-  <section>
+  <section className="text-center text-white bg-warning p-5">
     <h2>Slides</h2>
-    {slides.length > 0 && <ul>{slides.map((slide) => <li>{slide.id}</li>)}</ul>}
-    {JSON.stringify(slides)}
+    {slides.length > 0 && (
+      <div className="row">
+        {slides.map((slide) => (
+          <div className="col-3">
+            <span dangerouslySetInnerHTML={{ __html: slide.content.content }} />
+          </div>
+        ))}
+      </div>
+    )}
   </section>
 );
 
