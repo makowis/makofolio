@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Developers 1`] = `
+<div
+  className={undefined}
+>
+  <img
+    alt="Makoto Henmi"
+    className={undefined}
+    facebook="makoto.henmi"
+    github="makowis"
+    height={40}
+    id="mako_wis"
+    nickname="mako_wis"
+    onClick={[Function]}
+    src="avatar.bmp"
+    twitter="mako_wis"
+    width={40}
+  />
+</div>
+`;

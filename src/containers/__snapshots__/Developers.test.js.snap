@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Person Developers 1`] = `
+<div
+  className={undefined}
+>
+  <img
+    alt="Makoto Henmi"
+    className={undefined}
+    facebook="makoto.henmi"
+    github="makowis"
+    height={40}
+    id="mako_wis"
+    nickname="mako_wis"
+    onClick={[Function]}
+    src="avatar.bmp"
+    twitter="mako_wis"
+    width={40}
+  />
+  <img
+    alt="Tomohiko Himura"
+    className={undefined}
+    facebook="eielh"
+    github="eiel"
+    height={40}
+    id="eiel"
+    nickname="eiel"
+    onClick={[Function]}
+    src="https://pbs.twimg.com/profile_images/2754435592/6fef2556bc06febd5c6ab4c24ae08282_400x400.jpeg"
+    twitter="eielh"
+    width={40}
+  />
+</div>
+`;
