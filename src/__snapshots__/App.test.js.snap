@@ -128,7 +128,7 @@ exports[`renders App 1`] = `
       className="text-center text-white bg-info p-5"
     >
       <h2>
-        Special Thanks
+        Developers
       </h2>
       <div
         className={undefined}
