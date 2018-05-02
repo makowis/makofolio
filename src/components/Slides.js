@@ -9,8 +9,8 @@ type Props = {
 const Slides = ({ slides }: Props) => (
   <section>
     <h2>Slides</h2>
-    {slides && slides.length > 0 && <ul>{slides.map((slide) => <li>{slide.id}</li>)}</ul>}
-    {slides}
+    {slides.length > 0 && <ul>{slides.map((slide) => <li>{slide.id}</li>)}</ul>}
+    {JSON.stringify(slides)}
   </section>
 );
 
