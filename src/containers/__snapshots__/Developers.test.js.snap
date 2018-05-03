@@ -30,5 +30,18 @@ exports[`renders Person Developers 1`] = `
     twitter="eielh"
     width={40}
   />
+  <img
+    alt="Yukinori Kitadai"
+    className={undefined}
+    facebook="Nyoho"
+    github="Nyoho"
+    height={40}
+    id="Nyoho"
+    nickname="Nyoho"
+    onClick={[Function]}
+    src="https://avatars2.githubusercontent.com/u/118150"
+    twitter="NeXTSTEP2OSX"
+    width={40}
+  />
 </div>
 `;

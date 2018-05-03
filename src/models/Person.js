@@ -44,8 +44,18 @@ export const eiel: Person = {
   github: 'eiel',
 };
 
-export const persons = { mako_wis, moriC, eiel };
+export const nyoho: Person = {
+  id: 'Nyoho',
+  avatar: 'https://avatars2.githubusercontent.com/u/118150',
+  nickname: 'Nyoho',
+  name: 'Yukinori Kitadai',
+  twitter: 'NeXTSTEP2OSX',
+  facebook: 'Nyoho',
+  github: 'Nyoho',
+};
 
-export const developers: Person[] = [mako_wis, eiel];
+export const persons = { mako_wis, moriC, eiel, nyoho };
+
+export const developers: Person[] = [mako_wis, eiel, nyoho];
 
 export default mako_wis;
