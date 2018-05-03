@@ -15,7 +15,7 @@ const SlideComponent = ({ id, content, link, title }: Slide) => (
   </a>
 );
 
-const Wrapper = ({ children }: { children?: Node }) => {
+const Wrapper = ({ children }: { children: Node }) => {
   if (children === null) {
     return null;
   }

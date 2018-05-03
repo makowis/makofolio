@@ -1,24 +1,15 @@
 // @flow
-import person from '../models/Person';
-import type { Person } from '../models/Person';
-import type { Slide } from '../models/Slide';
+import { combineReducers } from 'redux';
 
-export type State = { person: Person, slides: Slide[] };
+import person from './person';
+import slide from './slide';
+import type { State as Person } from './person';
+import type { State as Slide } from './slide';
 
-type Action =
-  | { type: 'CHANGE_PERSON', person: Person }
-  | { type: 'CHANGE_SLIDES', slides: Slide[] };
-const slides = [];
-
-const reducer = (state: State = { person, slides }, action: Action) => {
-  switch (action.type) {
-    case 'CHANGE_PERSON':
-      return { ...state, person: action.person };
-    case 'CHANGE_SLIDES':
-      return { ...state, slides: action.slides };
-    default:
-      return state;
-  }
-};
+// なぜか slideがunusedっていわれる
+// noinspection JSUnusedGlobalSymbols
+const reducer = combineReducers({ person, slide });
 
 export default reducer;
+
+export type State = { person: Person, slide: Slide };

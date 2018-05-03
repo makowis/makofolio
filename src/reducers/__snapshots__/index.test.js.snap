@@ -12,7 +12,9 @@ Object {
     "speakerdeck": "makowis",
     "twitter": "mako_wis",
   },
-  "slides": Array [],
+  "slide": Object {
+    "slides": Array [],
+  },
 }
 `;
 
@@ -27,6 +29,8 @@ Object {
     "nickname": "もりしー",
     "twitter": "CentBoss",
   },
-  "slides": Array [],
+  "slide": Object {
+    "slides": Array [],
+  },
 }
 `;
