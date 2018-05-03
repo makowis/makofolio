@@ -125,6 +125,13 @@ exports[`renders App 1`] = `
       </p>
     </section>
     <section
+      className="text-center text-white bg-warning p-5"
+    >
+      <h2>
+        Slides
+      </h2>
+    </section>
+    <section
       className="text-center text-white bg-info p-5"
     >
       <h2>
@@ -142,6 +149,7 @@ exports[`renders App 1`] = `
           id="mako_wis"
           nickname="mako_wis"
           onClick={[Function]}
+          speakerdeck="makowis"
           src="avatar.bmp"
           twitter="mako_wis"
           width={40}
@@ -155,6 +163,7 @@ exports[`renders App 1`] = `
           id="eiel"
           nickname="eiel"
           onClick={[Function]}
+          speakerdeck="eiel"
           src="https://pbs.twimg.com/profile_images/2754435592/6fef2556bc06febd5c6ab4c24ae08282_400x400.jpeg"
           twitter="eielh"
           width={40}
@@ -175,5 +184,12 @@ exports[`renders App 1`] = `
       </div>
     </section>
   </main>
+  <div
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  />
 </div>
 `;

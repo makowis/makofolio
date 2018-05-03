@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Person 1`] = `
+<section
+  className="text-center text-white bg-warning p-5"
+>
+  <h2>
+    Slides
+  </h2>
+</section>
+`;

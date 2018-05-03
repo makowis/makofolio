@@ -8,13 +8,14 @@ import ConnectedApp from './App';
 import DevTools from './containers/DevTools';
 import registerServiceWorker from './registerServiceWorker';
 import { persons } from './models/Person';
+import { changePerson } from './reducers/person';
 
 const store = configureStore();
 
 const personId = window.location.pathname.substr(1);
 const person = persons[personId];
 if (person) {
-  store.dispatch({ type: 'CHANGE_PERSON', person });
+  store.dispatch(changePerson(person));
 }
 
 const Application = (

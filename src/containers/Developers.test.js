@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
 import Developers from './Developers';
 
-const reducer = () => {};
+const reducer = () => ({});
 
 const store = createStore(reducer);
 
