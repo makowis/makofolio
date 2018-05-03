@@ -10,6 +10,7 @@ export type Person = {
   twitter: string,
   facebook: string,
   github: string,
+  speakerdeck: string,
 };
 
 export const mako_wis: Person = {
@@ -20,6 +21,7 @@ export const mako_wis: Person = {
   twitter: 'mako_wis',
   facebook: 'makoto.henmi',
   github: 'makowis',
+  speakerdeck: 'makowis',
 };
 
 export const moriC: Person = {
@@ -31,6 +33,7 @@ export const moriC: Person = {
   twitter: 'CentBoss',
   facebook: 'tomohiro.m0219',
   github: 'moriC',
+  speakerdeck: '',
 };
 
 export const eiel: Person = {
@@ -42,6 +45,7 @@ export const eiel: Person = {
   twitter: 'eielh',
   facebook: 'eielh',
   github: 'eiel',
+  speakerdeck: 'eiel',
 };
 
 export const persons = { mako_wis, moriC, eiel };
