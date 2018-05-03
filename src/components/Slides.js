@@ -16,10 +16,13 @@ const SlideComponent = ({ id, content, link, title }: Slide) => (
 );
 
 const Wrapper = ({ children }: { children?: Node }) => {
+  if (children === null) {
+    return null;
+  }
   if (Children.count(children) <= 0) {
     return null;
   }
-  return children;
+  return <div className="row my-3">{children}</div>;
 };
 
 type Props = {
@@ -29,9 +32,7 @@ type Props = {
 const Slides = ({ slides }: Props) => (
   <section className="text-center text-white bg-warning p-5">
     <h2>Slides</h2>
-    <Wrapper>
-      <div className="row my-3">{slides.map(SlideComponent)}</div>
-    </Wrapper>
+    <Wrapper>{slides.map(SlideComponent)}</Wrapper>
   </section>
 );
 

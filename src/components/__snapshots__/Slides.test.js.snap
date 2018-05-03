@@ -7,8 +7,5 @@ exports[`renders Person 1`] = `
   <h2>
     Slides
   </h2>
-  <div
-    className="row my-3"
-  />
 </section>
 `;

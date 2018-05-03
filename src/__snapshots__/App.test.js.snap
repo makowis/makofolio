@@ -130,9 +130,6 @@ exports[`renders App 1`] = `
       <h2>
         Slides
       </h2>
-      <div
-        className="row my-3"
-      />
     </section>
     <section
       className="text-center text-white bg-info p-5"
