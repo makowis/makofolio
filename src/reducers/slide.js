@@ -3,9 +3,17 @@ import type { Slide } from '../models/Slide';
 
 export type State = { slides: Slide[] };
 
-const CHANGE_SLIDES: 'CHANGE_SLIDES' = 'CHANGE_SLIDES';
+// ActionType
+const CHANGE_SLIDES: 'SLIDE/CHANGE_SLIDES' = 'SLIDE/CHANGE_SLIDES';
 
-type Action = { type: typeof CHANGE_SLIDES, slides: Slide[] };
+// ActionCreator
+export const changeSlides = (slides: Slide[]) => ({
+  type: CHANGE_SLIDES,
+  slides,
+});
+
+type ChangeSlides = { type: typeof CHANGE_SLIDES, slides: Slide[] };
+type Action = ChangeSlides;
 
 const reducer = (state: State = { slides: [] }, action: Action): State => {
   switch (action.type) {

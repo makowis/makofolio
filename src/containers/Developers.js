@@ -6,6 +6,7 @@ import type { Dispatch } from 'redux';
 
 import Component from '../components/Developers';
 import { developers } from '../models/Person';
+import { changePerson } from '../reducers/person';
 
 const mapStateToProps = () => ({
   people: developers,
@@ -17,7 +18,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => ({
   onPersonClick: (person) => () => {
     // TODO react-router を導入すれば削除できるので、直接扱う
     window.history.pushState(null, person.name, `/${person.id}`);
-    dispatch({ type: 'CHANGE_PERSON', person });
+    dispatch(changePerson(person));
   },
 });
 

@@ -7,7 +7,7 @@ import renderer from 'react-test-renderer';
 import App from './App';
 import person from './models/Person';
 
-const reducer = () => ({ person, slides: [] });
+const reducer = () => ({ person, slide: { slides: [] } });
 
 const store = createStore(reducer);
 

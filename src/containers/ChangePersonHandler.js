@@ -7,18 +7,19 @@ import React from 'react';
 import { connect } from 'react-redux';
 import type { Dispatch } from 'redux';
 
-import type { Person } from '../models/Person';
+import { changeSlides } from '../reducers/slide';
 import getSlides from '../api/getSlides';
+import type { Person } from '../models/Person';
 import type { State } from '../reducers/index';
 
-const changeSlides = (dispatch: Dispatch) => async ({
+const changeSlidesBuilder = (dispatch: Dispatch) => async ({
   speakerdeck,
 }: Person) => {
   // 一旦表示してるスライドを消す
-  dispatch({ type: 'CHANGE_SLIDES', slides: [] });
+  dispatch(changeSlides([]));
   if (speakerdeck) {
     const slides = await getSlides(speakerdeck);
-    dispatch({ type: 'CHANGE_SLIDES', slides });
+    dispatch(changeSlides(slides));
   }
 };
 
@@ -34,7 +35,7 @@ export const Component = ({ onChangePerson, person }: Props) => {
 
 const mapStateToProps = ({ person }: State) => ({ person });
 const mapDispatchToProps = (dispatch: Dispatch) => ({
-  onChangePerson: changeSlides(dispatch),
+  onChangePerson: changeSlidesBuilder(dispatch),
 });
 
 const ChangePersonHandler = connect(mapStateToProps, mapDispatchToProps)(
