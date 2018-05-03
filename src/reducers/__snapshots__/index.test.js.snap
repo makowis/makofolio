@@ -9,7 +9,11 @@ Object {
     "id": "mako_wis",
     "name": "Makoto Henmi",
     "nickname": "mako_wis",
+    "speakerdeck": "makowis",
     "twitter": "mako_wis",
+  },
+  "slide": Object {
+    "slides": Array [],
   },
 }
 `;
@@ -24,6 +28,9 @@ Object {
     "name": "Tomohiro Morishita",
     "nickname": "もりしー",
     "twitter": "CentBoss",
+  },
+  "slide": Object {
+    "slides": Array [],
   },
 }
 `;

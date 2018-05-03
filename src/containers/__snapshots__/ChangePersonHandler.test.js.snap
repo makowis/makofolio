@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Person Developers 1`] = `
+<div
+  style={
+    Object {
+      "display": "none",
+    }
+  }
+/>
+`;

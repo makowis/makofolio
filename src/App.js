@@ -6,6 +6,7 @@ import './App.css';
 import Person from './containers/Person';
 import Developers from './containers/Developers';
 import Slides from './containers/Slides';
+import ChangePersonHandler from './containers/ChangePersonHandler';
 
 fontawesome.library.add(brands);
 
@@ -30,6 +31,7 @@ const App = () => (
         <Developers />
       </section>
     </main>
+    <ChangePersonHandler />
   </div>
 );
 

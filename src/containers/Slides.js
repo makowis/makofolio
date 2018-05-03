@@ -1,11 +1,10 @@
-/* eslint-env browser */
 // @flow
 import { connect } from 'react-redux';
 
 import Component from '../components/Slides';
 import type { State } from '../reducers/index';
 
-const mapStateToProps = ({ slides }: State) => ({ slides });
+const mapStateToProps = ({ slide }: State) => slide;
 
 const Slides = connect(mapStateToProps)(Component);
 
