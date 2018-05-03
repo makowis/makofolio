@@ -13,6 +13,7 @@ exports[`renders Developers 1`] = `
     id="mako_wis"
     nickname="mako_wis"
     onClick={[Function]}
+    speakerdeck="makowis"
     src="avatar.bmp"
     twitter="mako_wis"
     width={40}
