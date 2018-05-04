@@ -177,6 +177,7 @@ exports[`renders App 1`] = `
           id="Nyoho"
           nickname="Nyoho"
           onClick={[Function]}
+          speakerdeck="Nyoho"
           src="https://avatars2.githubusercontent.com/u/118150"
           twitter="NeXTSTEP2OSX"
           width={40}
