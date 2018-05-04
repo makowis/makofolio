@@ -55,6 +55,7 @@ export const nyoho: Person = {
   twitter: 'NeXTSTEP2OSX',
   facebook: 'Nyoho',
   github: 'Nyoho',
+  speakerdeck: 'Nyoho',
 };
 
 export const persons = { mako_wis, moriC, eiel, nyoho };
