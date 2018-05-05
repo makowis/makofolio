@@ -5,6 +5,7 @@ import brands from '@fortawesome/fontawesome-free-brands';
 import './App.css';
 import Person from './containers/Person';
 import Developers from './containers/Developers';
+import GithubGrass from './containers/GithubGrass';
 import Slides from './containers/Slides';
 import ChangePersonHandler from './containers/ChangePersonHandler';
 
@@ -25,6 +26,7 @@ const App = () => (
           で公開しています。
         </p>
       </section>
+      <GithubGrass />
       <Slides />
       <section className="text-center text-white bg-info p-5">
         <h2>Developers</h2>
