@@ -12,5 +12,16 @@ exports[`renders Developers 1`] = `
     className="img-fluid"
     src="https://grass-graph.moshimo.works/images/makowis.png"
   />
+  <p>
+    <a
+      href="https://grass-graph.moshimo.works"
+    >
+      <span
+        className="text-white"
+      >
+        image from Grass-Graph
+      </span>
+    </a>
+  </p>
 </section>
 `;

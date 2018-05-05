@@ -10,6 +10,11 @@ export const GithubGrass = ({ github }: Model) => (
       alt="GitHub Grass Graph"
       className="img-fluid"
     />
+    <p>
+      <a href="https://grass-graph.moshimo.works">
+        <span className="text-white">image from Grass-Graph</span>
+      </a>
+    </p>
   </section>
 );
 
