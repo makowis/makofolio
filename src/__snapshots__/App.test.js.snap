@@ -125,6 +125,18 @@ exports[`renders App 1`] = `
       </p>
     </section>
     <section
+      className="text-center text-white bg-primary p-5"
+    >
+      <h2>
+        GitHub Grass Graph
+      </h2>
+      <img
+        alt="GitHub Grass Graph"
+        className="img-fluid"
+        src="https://grass-graph.moshimo.works/images/makowis.png"
+      />
+    </section>
+    <section
       className="text-center text-white bg-warning p-5"
     >
       <h2>

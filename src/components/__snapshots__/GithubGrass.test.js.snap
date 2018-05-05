@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Developers 1`] = `
+<section
+  className="text-center text-white bg-primary p-5"
+>
+  <h2>
+    GitHub Grass Graph
+  </h2>
+  <img
+    alt="GitHub Grass Graph"
+    className="img-fluid"
+    src="https://grass-graph.moshimo.works/images/makowis.png"
+  />
+</section>
+`;
