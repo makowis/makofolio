@@ -7,5 +7,5 @@ deploy:
   token:
     secure: $FIREBASE_TOKEN
   project: $FIREBASE_PROJECT
-  on: 
+  on:
     branch: master
