@@ -1,12 +1,19 @@
+/* eslint-disable global-require */
 // @flow
 /**
  * パスの状態変化による制御を行います。
  */
-import createHistory from 'history/createBrowserHistory';
 import type { Store } from 'redux';
 import makowis, { persons } from './models/Person';
 import { changePerson } from './reducers/person';
 
+const createHistory = () => {
+  // テスト環境ではMemoryHistoryを利用する
+  if (process.env.NODE_ENV === 'test') {
+    return require('history').createMemoryHistory;
+  }
+  return require('history').createBrowserHistory;
+};
 const history = createHistory();
 
 export const setupHistoryHandler = (store: Store) => {
