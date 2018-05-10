@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/makowis/makofolio.svg?branch=master)](https://travis-ci.com/makowis/makofolio)
 [![CodeFactor](https://www.codefactor.io/repository/github/makowis/makofolio/badge)](https://www.codefactor.io/repository/github/makowis/makofolio)
-[![BCH compliance](https://bettercodehub.com/edge/badge/makowis/makowis-portfolio?branch=master)](https://bettercodehub.com/)
+[![BCH compliance](https://bettercodehub.com/edge/badge/makowis/makofolio?branch=master)](https://bettercodehub.com/)
 
 https://makowis.com/
 
