@@ -7,16 +7,10 @@ import configureStore from './store/configureStore';
 import ConnectedApp from './App';
 import DevTools from './containers/DevTools';
 import registerServiceWorker from './registerServiceWorker';
-import { persons } from './models/Person';
-import { changePerson } from './reducers/person';
+import { setupHistoryHandler } from './history';
 
 const store = configureStore();
-
-const personId = window.location.pathname.substr(1);
-const person = persons[personId];
-if (person) {
-  store.dispatch(changePerson(person));
-}
+setupHistoryHandler(store);
 
 const Application = (
   <Provider {...{ store }}>
