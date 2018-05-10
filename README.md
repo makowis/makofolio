@@ -1,6 +1,6 @@
 # makowis-portfolio
 
-[![Build Status](https://travis-ci.org/makowis/makowis-portfolio.svg?branch=master)](https://travis-ci.org/makowis/makowis-portfolio)
+[![Build Status](https://travis-ci.com/makowis/makofolio.svg?branch=master)](https://travis-ci.com/makowis/makofolio)
 [![CodeFactor](https://www.codefactor.io/repository/github/makowis/makowis-portfolio/badge)](https://www.codefactor.io/repository/github/makowis/makowis-portfolio)
 [![BCH compliance](https://bettercodehub.com/edge/badge/makowis/makowis-portfolio?branch=master)](https://bettercodehub.com/)
 
