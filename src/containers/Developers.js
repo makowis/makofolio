@@ -7,6 +7,7 @@ import type { Dispatch } from 'redux';
 import Component from '../components/Developers';
 import { developers } from '../models/Person';
 import { changePerson } from '../reducers/person';
+import history from '../history';
 
 const mapStateToProps = () => ({
   people: developers,
@@ -16,8 +17,7 @@ const mapStateToProps = () => ({
 const mapDispatchToProps = (dispatch: Dispatch) => ({
   // なぜか IDEA に Unusedっていわれる。
   onPersonClick: (person) => () => {
-    // TODO react-router を導入すれば削除できるので、直接扱う
-    window.history.pushState(null, person.name, `/${person.id}`);
+    history.push(`/${person.id}`);
     dispatch(changePerson(person));
   },
 });
