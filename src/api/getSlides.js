@@ -1,8 +1,10 @@
 // @flow
 import axios from 'axios';
 
-const requestURL = (speakerdeck: string) =>
-  `https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%20%3D%20'https%3A%2F%2Fspeakerdeck.com%2F${speakerdeck}.atom'&format=json`;
+const speakerdeckFeedURL = (speakerdeck: string) =>
+  `https://speakerdeck.com/${speakerdeck}.atom`;
+const yqlQuery = (url: string) => `select * from xml where url = '${url}'`;
+const yqlURL = 'https://query.yahooapis.com/v1/public/yql';
 
 type Entry = {
   id: string,
@@ -22,7 +24,12 @@ type Entry = {
 
 const getSlides = async (speakerdeck: string): Promise<Entry[]> =>
   axios
-    .get(requestURL(speakerdeck))
+    .get(yqlURL, {
+      params: {
+        q: yqlQuery(speakerdeckFeedURL(speakerdeck)),
+        format: 'json',
+      },
+    })
     .then((res) => res.data.query.results.feed.entry);
 
 export default getSlides;
