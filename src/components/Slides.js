@@ -2,15 +2,10 @@
 import React, { Children } from 'react';
 import type { Node } from 'react';
 import type { Slide } from '../models/Slide';
-import { slide as className } from './Slides.css';
 
-const SlideComponent = ({ id, content, link, title }: Slide) => (
-  <a key={id} href={link.href} className="col mb-2">
-    <span
-      // eslint-disable-next-line react/no-danger
-      dangerouslySetInnerHTML={{ __html: content.content }}
-      className={className}
-    />
+const SlideComponent = ({ id, image, url, title }: Slide) => (
+  <a key={id} href={url} className="col mb-2">
+    <img src={image} alt={`${title} スライド扉`} />
     <p className="text-white my-1">{title}</p>
   </a>
 );

@@ -6,7 +6,23 @@ const speakerdeckFeedURL = (speakerdeck: string) =>
 const yqlQuery = (url: string) => `select * from xml where url = '${url}'`;
 const yqlURL = 'https://query.yahooapis.com/v1/public/yql';
 
-const getSlides = async (speakerdeck: string) =>
+type Entry = {
+  id: string,
+  published: string,
+  updated: string,
+  link: {
+    href: string,
+    rel: string,
+    type: string,
+  },
+  title: string,
+  content: {
+    type: string,
+    content: string,
+  },
+};
+
+const getSlides = async (speakerdeck: string): Promise<Entry[]> =>
   axios
     .get(yqlURL, {
       params: {
