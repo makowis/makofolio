@@ -8,19 +8,9 @@ import { connect } from 'react-redux';
 import type { Dispatch } from 'redux';
 
 import { changeSlides } from '../reducers/slide';
-import getSlides from '../api/getSlides';
-import getImageURL from '../html/extractFirstImageURL';
 import type { Person } from '../models/Person';
-import type { Slide } from '../models/Slide';
 import type { State } from '../reducers/index';
-
-// Atomフィード内のエントリーからSlideモデルへ変換する
-const EntryToSlide = ({ content, link, ...rest }): Promise<Slide> =>
-  getImageURL(content.content).then((image: string) => ({
-    image,
-    url: link.href,
-    ...rest,
-  }));
+import { getSlides } from '../usecases/getSlides';
 
 const changeSlidesBuilder = (dispatch: Dispatch) => async ({
   speakerdeck,
@@ -28,8 +18,7 @@ const changeSlidesBuilder = (dispatch: Dispatch) => async ({
   // 一旦表示してるスライドを消す
   dispatch(changeSlides([]));
   if (speakerdeck) {
-    const entries = await getSlides(speakerdeck);
-    const slides = await Promise.all(entries.map(EntryToSlide));
+    const slides = await getSlides(speakerdeck);
     dispatch(changeSlides(slides));
   }
 };

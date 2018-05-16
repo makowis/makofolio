@@ -6,7 +6,7 @@ const speakerdeckFeedURL = (speakerdeck: string) =>
 const yqlQuery = (url: string) => `select * from xml where url = '${url}'`;
 const yqlURL = 'https://query.yahooapis.com/v1/public/yql';
 
-type Entry = {
+export type Entry = {
   id: string,
   published: string,
   updated: string,
