@@ -6,38 +6,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import type { Dispatch } from 'redux';
-import HtmlParser from 'htmlparser2';
 
 import { changeSlides } from '../reducers/slide';
-import getSlides from '../api/getSlides';
 import type { Person } from '../models/Person';
-import type { Slide } from '../models/Slide';
 import type { State } from '../reducers/index';
-
-// HTMLの中から先頭のimgのsrcを取り出す
-const extractImageSrc = ({ content }): Promise<string> =>
-  new Promise((resolve, reject) => {
-    const parser = new HtmlParser.Parser({
-      onopentag(name, attributes) {
-        if (name === 'img') {
-          resolve(attributes.src);
-        }
-      },
-      onend: reject,
-      onerror: reject,
-    });
-
-    parser.write(content);
-    parser.end();
-  });
-
-// Atomフィード内のエントリーからSlideモデルへ変換する
-const EntryToSlide = ({ content, link, ...rest }): Promise<Slide> =>
-  extractImageSrc(content).then((image) => ({
-    image,
-    url: link.href,
-    ...rest,
-  }));
+import { getSlides } from '../usecases/getSlides';
 
 const changeSlidesBuilder = (dispatch: Dispatch) => async ({
   speakerdeck,
@@ -45,8 +18,7 @@ const changeSlidesBuilder = (dispatch: Dispatch) => async ({
   // 一旦表示してるスライドを消す
   dispatch(changeSlides([]));
   if (speakerdeck) {
-    const entries = await getSlides(speakerdeck);
-    const slides = await Promise.all(entries.map(EntryToSlide));
+    const slides = await getSlides(speakerdeck);
     dispatch(changeSlides(slides));
   }
 };
