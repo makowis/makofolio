@@ -6,34 +6,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import type { Dispatch } from 'redux';
-import HtmlParser from 'htmlparser2';
 
 import { changeSlides } from '../reducers/slide';
 import getSlides from '../api/getSlides';
+import getImageURL from '../html/extractFirstImageURL';
 import type { Person } from '../models/Person';
 import type { Slide } from '../models/Slide';
 import type { State } from '../reducers/index';
 
-// HTMLの中から先頭のimgのsrcを取り出す
-const extractImageSrc = ({ content }): Promise<string> =>
-  new Promise((resolve, reject) => {
-    const parser = new HtmlParser.Parser({
-      onopentag(name, attributes) {
-        if (name === 'img') {
-          resolve(attributes.src);
-        }
-      },
-      onend: reject,
-      onerror: reject,
-    });
-
-    parser.write(content);
-    parser.end();
-  });
-
 // Atomフィード内のエントリーからSlideモデルへ変換する
 const EntryToSlide = ({ content, link, ...rest }): Promise<Slide> =>
-  extractImageSrc(content).then((image) => ({
+  getImageURL(content.content).then((image: string) => ({
     image,
     url: link.href,
     ...rest,
