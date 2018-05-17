@@ -16,8 +16,9 @@ const buildDevTools = () =>
     </DockMonitor>,
   );
 
-const DevTools = inDevelopment
-  ? buildDevTools()
-  : () => <div style={{ display: 'none' }} />;
+const productionDevTool = () => <div style={{ display: 'none' }} />;
+productionDevTool.instrument = () => {};
+
+const DevTools = inDevelopment ? buildDevTools() : productionDevTool;
 
 export default DevTools;

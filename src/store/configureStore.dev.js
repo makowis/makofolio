@@ -3,14 +3,14 @@ import { createStore, compose } from 'redux';
 import rootReducer from '../reducers/index';
 import DevTools from '../containers/DevTools';
 
-const enhancer = compose(DevTools.instrument());
-
 // moduleの型定義がないのでごまかす
 declare var module: {
   hot: {
     accept: (string, () => void) => void,
   },
 };
+
+const enhancer = compose(DevTools.instrument());
 
 export default function configureStore(initialState: ?Object) {
   const store = createStore(rootReducer, initialState, enhancer);
