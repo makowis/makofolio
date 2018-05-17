@@ -1,3 +1,4 @@
+// @flow
 module.exports = {
   parser: 'babel-eslint',
   extends: [
@@ -13,6 +14,7 @@ module.exports = {
     },
   },
   rules: {
+    'flowtype/require-valid-file-annotation': ['error', 'always'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
   },
 };

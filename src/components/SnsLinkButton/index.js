@@ -1,3 +1,4 @@
+// @flow
 import TwitterLinkButton from './TwitterLinkButton';
 import FacebookLinkButton from './FacebookLinkButton';
 import GithubLinkButton from './GithubLinkButton';

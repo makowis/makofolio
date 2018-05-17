@@ -1,4 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
+// @flow
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import backgrounds from '@storybook/addon-backgrounds';
