@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { createDevTools } from 'redux-devtools';
@@ -15,8 +16,9 @@ const buildDevTools = () =>
     </DockMonitor>,
   );
 
-const DevTools = inDevelopment
-  ? buildDevTools()
-  : () => <div style={{ display: 'none' }} />;
+const productionDevTool = () => <div style={{ display: 'none' }} />;
+productionDevTool.instrument = () => {};
+
+const DevTools = inDevelopment ? buildDevTools() : productionDevTool;
 
 export default DevTools;

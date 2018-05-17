@@ -1,5 +1,6 @@
 /* eslint-disable no-console, no-use-before-define */
 /* eslint-env browser */
+// @flow
 // In production, we register a service worker to serve assets from local cache.
 
 // This lets the app load faster on subsequent visits in production, and gives
@@ -9,6 +10,15 @@
 
 // To learn more about the benefits of this model, read https://goo.gl/KwvDNy.
 // This link also includes instructions on opting out of this behavior.
+
+// ServiceWorkerの型定義が見当たらないので仮定義
+declare var navigator: {
+  serviceWorker: {
+    ready: Function,
+    register: Function,
+    controller: mixed,
+  },
+};
 
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
@@ -23,7 +33,11 @@ const isLocalhost = Boolean(
 export default function register() {
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
     // The URL constructor is available in all browsers that support SW.
-    const publicUrl = new URL(process.env.PUBLIC_URL, window.location);
+    const publicURL = process.env.PUBLIC_URL;
+    if (typeof publicURL !== 'string') {
+      throw new Error('環境変数 PUBLIC_URLが設定されていません');
+    }
+    const publicUrl = new URL(publicURL, window.location);
     if (publicUrl.origin !== window.location.origin) {
       // Our service worker won't work if PUBLIC_URL is on a different origin
       // from what our page is served on. This might happen if a CDN is used to
@@ -32,7 +46,7 @@ export default function register() {
     }
 
     window.addEventListener('load', () => {
-      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
+      const swUrl = `${publicURL}/service-worker.js`;
 
       if (isLocalhost) {
         // This is running on localhost. Lets check if a service worker still exists or not.

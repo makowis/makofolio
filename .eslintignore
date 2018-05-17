@@ -1,3 +1,6 @@
 !.eslintrc.js
 !.prettierrc.js
 flow-typed
+.idea
+build
+node_modules
