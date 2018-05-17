@@ -1,8 +1,10 @@
 /* eslint-disable camelcase */
 // @flow
 import avatar from '../img/avatar.bmp';
+import type { GitHubID } from '../github/models/GitHubID';
+import { toGitHubID } from '../github/models/GitHubID';
 
-export type Person = {
+export type PersonParams = {
   id: string,
   avatar: string,
   nickname: string,
@@ -13,7 +15,23 @@ export type Person = {
   speakerdeck?: string,
 };
 
-export const mako_wis: Person = {
+export type Person = {
+  id: string,
+  avatar: string,
+  nickname: string,
+  name: string,
+  twitter: string,
+  facebook: string,
+  github: GitHubID,
+  speakerdeck?: string,
+};
+
+const createPerson = ({ github, ...rest }: PersonParams): Person => ({
+  github: toGitHubID(github),
+  ...rest,
+});
+
+export const mako_wis: Person = createPerson({
   id: 'mako_wis',
   avatar,
   nickname: 'mako_wis',
@@ -22,9 +40,9 @@ export const mako_wis: Person = {
   facebook: 'makoto.henmi',
   github: 'makowis',
   speakerdeck: 'makowis',
-};
+});
 
-export const moriC: Person = {
+export const moriC: Person = createPerson({
   id: 'moriC',
   avatar:
     'https://pbs.twimg.com/profile_images/471280957119406080/LCUoaGga_400x400.png',
@@ -33,9 +51,9 @@ export const moriC: Person = {
   twitter: 'CentBoss',
   facebook: 'tomohiro.m0219',
   github: 'moriC',
-};
+});
 
-export const eiel: Person = {
+export const eiel: Person = createPerson({
   id: 'eiel',
   avatar:
     'https://pbs.twimg.com/profile_images/2754435592/6fef2556bc06febd5c6ab4c24ae08282_400x400.jpeg',
@@ -45,9 +63,9 @@ export const eiel: Person = {
   facebook: 'eielh',
   github: 'eiel',
   speakerdeck: 'eiel',
-};
+});
 
-export const nyoho: Person = {
+export const nyoho: Person = createPerson({
   id: 'Nyoho',
   avatar: 'https://avatars2.githubusercontent.com/u/118150',
   nickname: 'Nyoho',
@@ -56,7 +74,7 @@ export const nyoho: Person = {
   facebook: 'Nyoho',
   github: 'Nyoho',
   speakerdeck: 'Nyoho',
-};
+});
 
 export const persons = { mako_wis, moriC, eiel, nyoho };
 
