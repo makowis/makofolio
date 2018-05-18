@@ -8,6 +8,7 @@ import fontawesome from '@fortawesome/fontawesome';
 import brands from '@fortawesome/fontawesome-free-brands';
 
 import FacebookLinkButton from '../components/SnsLinkButton/FacebookLinkButton';
+import { toFacebookID } from '../facebook/models/FacebookID';
 
 fontawesome.library.add(brands);
 
@@ -18,6 +19,6 @@ storiesOf('SNSLinkButton', module)
   .add(
     'FacebookLinkButton',
     withNotes('クリックで指定ユーザのFacebookプロフィールへ遷移します。')(
-      () => <FacebookLinkButton facebookId="makoto.henmi" />,
+      () => <FacebookLinkButton facebookId={toFacebookID('makoto.henmi')} />,
     ),
   );
