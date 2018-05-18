@@ -7,10 +7,12 @@ import { withNotes } from '@storybook/addon-notes';
 import fontawesome from '@fortawesome/fontawesome';
 import brands from '@fortawesome/fontawesome-free-brands';
 
-import FacebookLinkButton from '../components/SnsLinkButton/FacebookLinkButton';
-import { toFacebookID } from '../facebook/models/FacebookID';
 import TwitterLinkButton from '../components/SnsLinkButton/TwitterLinkButton';
 import { toTwitterID } from '../twitter/models/TwitterID';
+import FacebookLinkButton from '../components/SnsLinkButton/FacebookLinkButton';
+import { toFacebookID } from '../facebook/models/FacebookID';
+import GithubLinkButton from '../components/SnsLinkButton/GithubLinkButton';
+import { toGitHubID } from '../github/models/GitHubID';
 
 fontawesome.library.add(brands);
 
@@ -29,4 +31,10 @@ storiesOf('SNSLinkButton', module)
     withNotes('クリックで指定ユーザのFacebookプロフィールへ遷移します。')(
       () => <FacebookLinkButton facebookId={toFacebookID('makoto.henmi')} />,
     ),
+  )
+  .add(
+    'GitHubLinkButton',
+    withNotes('クリックで指定ユーザのGithubプロフィールへ遷移します。')(() => (
+      <GithubLinkButton githubId={toGitHubID('makowis')} />
+    )),
   );
