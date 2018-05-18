@@ -3,6 +3,8 @@
 import avatar from '../img/avatar.bmp';
 import type { GitHubID } from '../github/models/GitHubID';
 import { toGitHubID } from '../github/models/GitHubID';
+import type { FacebookID } from '../facebook/models/FacebookID';
+import { toFacebookID } from '../facebook/models/FacebookID';
 
 export type PersonParams = {
   id: string,
@@ -21,13 +23,14 @@ export type Person = {
   nickname: string,
   name: string,
   twitter: string,
-  facebook: string,
+  facebook: FacebookID,
   github: GitHubID,
   speakerdeck?: string,
 };
 
-const createPerson = ({ github, ...rest }: PersonParams): Person => ({
+const createPerson = ({ github, facebook, ...rest }: PersonParams): Person => ({
   github: toGitHubID(github),
+  facebook: toFacebookID(facebook),
   ...rest,
 });
 
