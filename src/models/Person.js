@@ -5,6 +5,8 @@ import type { GitHubID } from '../github/models/GitHubID';
 import { toGitHubID } from '../github/models/GitHubID';
 import type { FacebookID } from '../facebook/models/FacebookID';
 import { toFacebookID } from '../facebook/models/FacebookID';
+import type { TwitterID } from '../twitter/models/TwitterID';
+import { toTwitterID } from '../twitter/models/TwitterID';
 
 export type PersonParams = {
   id: string,
@@ -22,15 +24,21 @@ export type Person = {
   avatar: string,
   nickname: string,
   name: string,
-  twitter: string,
+  twitter: TwitterID,
   facebook: FacebookID,
   github: GitHubID,
   speakerdeck?: string,
 };
 
-const createPerson = ({ github, facebook, ...rest }: PersonParams): Person => ({
-  github: toGitHubID(github),
+const createPerson = ({
+  twitter,
+  facebook,
+  github,
+  ...rest
+}: PersonParams): Person => ({
+  twitter: toTwitterID(twitter),
   facebook: toFacebookID(facebook),
+  github: toGitHubID(github),
   ...rest,
 });
 
