@@ -29,7 +29,7 @@ export type Person = {
   twitter: TwitterID,
   facebook: FacebookID,
   github: GitHubID,
-  speakerdeck?: SpeakerdeckID,
+  speakerdeck: ?SpeakerdeckID,
 };
 
 const createPerson = ({
@@ -38,18 +38,13 @@ const createPerson = ({
   github,
   speakerdeck,
   ...rest
-}: PersonParams): Person => {
-  const person: Person = {
-    twitter: toTwitterID(twitter),
-    facebook: toFacebookID(facebook),
-    github: toGitHubID(github),
-    ...rest,
-  };
-  if (speakerdeck) {
-    person.speakerdeck = toSpeakerdeckID(speakerdeck);
-  }
-  return person;
-};
+}: PersonParams): Person => ({
+  twitter: toTwitterID(twitter),
+  facebook: toFacebookID(facebook),
+  github: toGitHubID(github),
+  speakerdeck: speakerdeck ? toSpeakerdeckID(speakerdeck) : null,
+  ...rest,
+});
 
 export const mako_wis: Person = createPerson({
   id: 'mako_wis',
