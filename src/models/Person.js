@@ -7,6 +7,8 @@ import type { FacebookID } from '../facebook/models/FacebookID';
 import { toFacebookID } from '../facebook/models/FacebookID';
 import type { TwitterID } from '../twitter/models/TwitterID';
 import { toTwitterID } from '../twitter/models/TwitterID';
+import type { SpeakerdeckID } from '../speakerdeck/models/SpeakerdeckID';
+import { toSpeakerdeckID } from '../speakerdeck/models/SpeakerdeckID';
 
 export type PersonParams = {
   id: string,
@@ -27,20 +29,27 @@ export type Person = {
   twitter: TwitterID,
   facebook: FacebookID,
   github: GitHubID,
-  speakerdeck?: string,
+  speakerdeck?: SpeakerdeckID,
 };
 
 const createPerson = ({
   twitter,
   facebook,
   github,
+  speakerdeck,
   ...rest
-}: PersonParams): Person => ({
-  twitter: toTwitterID(twitter),
-  facebook: toFacebookID(facebook),
-  github: toGitHubID(github),
-  ...rest,
-});
+}: PersonParams): Person => {
+  const person: Person = {
+    twitter: toTwitterID(twitter),
+    facebook: toFacebookID(facebook),
+    github: toGitHubID(github),
+    ...rest,
+  };
+  if (speakerdeck) {
+    person.speakerdeck = toSpeakerdeckID(speakerdeck);
+  }
+  return person;
+};
 
 export const mako_wis: Person = createPerson({
   id: 'mako_wis',

@@ -2,9 +2,10 @@
 // @flow
 import nock from 'nock';
 import getSlides from './getSlides';
+import { toSpeakerdeckID } from '../speakerdeck/models/SpeakerdeckID';
 
 it('renders App', () => {
-  const speakerdeckId = 'makowis';
+  const speakerdeckId = toSpeakerdeckID('makowis');
   nock('https://query.yahooapis.com')
     .get('/v1/public/yql')
     .query({

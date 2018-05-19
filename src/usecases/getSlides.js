@@ -3,6 +3,7 @@ import getImageURL from '../html/extractFirstImageURL';
 import type { Slide } from '../models/Slide';
 import type { Entry } from '../api/getSlides';
 import apiGetSlides from '../api/getSlides';
+import type { SpeakerdeckID } from '../speakerdeck/models/SpeakerdeckID';
 
 // Atomフィード内のエントリーからSlideモデルへ変換する
 export const entryToSlide = ({
@@ -21,7 +22,7 @@ export const entryToSlide = ({
  * @param speakerdeck {String}
  * @returns {Promise<[Slide]>}
  */
-export const getSlides = (speakerdeck: string): Promise<Slide[]> =>
+export const getSlides = (speakerdeck: SpeakerdeckID): Promise<Slide[]> =>
   apiGetSlides(speakerdeck).then((entries) =>
     Promise.all(entries.map(entryToSlide)),
   );
