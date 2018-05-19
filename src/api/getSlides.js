@@ -1,8 +1,8 @@
 // @flow
 import axios from 'axios';
+import type { SpeakerdeckID } from '../speakerdeck/models/SpeakerdeckID';
+import { feedURL as speakerdeckFeedURL } from '../speakerdeck/feedURL';
 
-const speakerdeckFeedURL = (speakerdeck: string) =>
-  `https://speakerdeck.com/${speakerdeck}.atom`;
 const yqlQuery = (url: string) => `select * from xml where url = '${url}'`;
 const yqlURL = 'https://query.yahooapis.com/v1/public/yql';
 
@@ -22,7 +22,7 @@ export type Entry = {
   },
 };
 
-const getSlides = async (speakerdeck: string): Promise<Entry[]> =>
+const getSlides = async (speakerdeck: SpeakerdeckID): Promise<Entry[]> =>
   axios
     .get(yqlURL, {
       params: {
