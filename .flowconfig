@@ -9,5 +9,7 @@
 [options]
 module.file_ext=.bmp
 module.file_ext=.js
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=src/subpackages
 
 [strict]
