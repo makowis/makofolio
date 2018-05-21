@@ -1,5 +1,7 @@
 // @flow
-import getImageURL from '../html/extractFirstImageURL';
+// プロジェクト内に存在するため無効化
+// eslint-disable-next-line import/no-extraneous-dependencies
+import getImageURL from '@makofolio/html/extractFirstImageURL';
 import type { Slide } from '../models/Slide';
 import type { Entry } from '../api/getSlides';
 import apiGetSlides from '../api/getSlides';
