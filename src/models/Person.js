@@ -1,14 +1,18 @@
 /* eslint-disable camelcase */
 // @flow
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { toSpeakerdeckID } from '@makofolio/speakerdeck/models/SpeakerdeckID';
+import type { SpeakerdeckID } from '@makofolio/speakerdeck/models/SpeakerdeckID';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { toTwitterID } from '@makofolio/twitter/models/TwitterID';
+import type { TwitterID } from '@makofolio/twitter/models/TwitterID';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { toGitHubID } from '@makofolio/github/models/GitHubID';
+import type { GitHubID } from '@makofolio/github/models/GitHubID';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { toFacebookID } from '@makofolio/facebook/models/FacebookID';
+import type { FacebookID } from '@makofolio/facebook/models/FacebookID';
 import avatar from '../img/avatar.bmp';
-import type { GitHubID } from '../github/models/GitHubID';
-import { toGitHubID } from '../github/models/GitHubID';
-import type { FacebookID } from '../facebook/models/FacebookID';
-import { toFacebookID } from '../facebook/models/FacebookID';
-import type { TwitterID } from '../twitter/models/TwitterID';
-import { toTwitterID } from '../twitter/models/TwitterID';
-import type { SpeakerdeckID } from '../speakerdeck/models/SpeakerdeckID';
-import { toSpeakerdeckID } from '../speakerdeck/models/SpeakerdeckID';
 
 export type PersonParams = {
   id: string,

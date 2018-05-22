@@ -2,8 +2,9 @@
 // @flow
 import React from 'react';
 import renderer from 'react-test-renderer';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { toFacebookID } from '@makofolio/facebook/models/FacebookID';
 import FacebookLinkButton from './FacebookLinkButton';
-import { toFacebookID } from '../../facebook/models/FacebookID';
 
 it('renders FacebookLinkButton', () => {
   const tree = renderer
