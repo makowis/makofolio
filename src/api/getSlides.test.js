@@ -1,8 +1,9 @@
 /* eslint-env jest */
 // @flow
 import nock from 'nock';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { toSpeakerdeckID } from '@makofolio/speakerdeck/models/SpeakerdeckID';
 import getSlides from './getSlides';
-import { toSpeakerdeckID } from '../speakerdeck/models/SpeakerdeckID';
 
 it('renders App', () => {
   const speakerdeckId = toSpeakerdeckID('makowis');
