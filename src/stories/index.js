@@ -6,9 +6,9 @@ import backgrounds from '@storybook/addon-backgrounds';
 import { withNotes } from '@storybook/addon-notes';
 import fontawesome from '@fortawesome/fontawesome';
 import brands from '@fortawesome/fontawesome-free-brands';
+import { toTwitterID } from '@makofolio/twitter/models/TwitterID';
 
 import TwitterLinkButton from '../components/SnsLinkButton/TwitterLinkButton';
-import { toTwitterID } from '../twitter/models/TwitterID';
 import FacebookLinkButton from '../components/SnsLinkButton/FacebookLinkButton';
 import { toFacebookID } from '../facebook/models/FacebookID';
 import GithubLinkButton from '../components/SnsLinkButton/GithubLinkButton';

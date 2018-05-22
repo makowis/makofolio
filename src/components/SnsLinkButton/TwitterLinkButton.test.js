@@ -2,8 +2,9 @@
 // @flow
 import React from 'react';
 import renderer from 'react-test-renderer';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { toTwitterID } from '@makofolio/twitter/models/TwitterID';
 import TwitterLinkButton from './TwitterLinkButton';
-import { toTwitterID } from '../../twitter/models/TwitterID';
 
 it('renders TwitterLinkButton', () => {
   const tree = renderer
