@@ -2,10 +2,11 @@
 // プロジェクト内に存在するため無効化
 // eslint-disable-next-line import/no-extraneous-dependencies
 import getImageURL from '@makofolio/html/extractFirstImageURL';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import apiGetSlides from '@makofolio/speakerdeck/getSlides';
+import type { Entry } from '@makofolio/speakerdeck/getSlides';
 import type { SpeakerdeckID } from '@makofolio/speakerdeck/models/SpeakerdeckID';
 import type { Slide } from '../models/Slide';
-import type { Entry } from '../api/getSlides';
-import apiGetSlides from '../api/getSlides';
 
 // Atomフィード内のエントリーからSlideモデルへ変換する
 export const entryToSlide = ({

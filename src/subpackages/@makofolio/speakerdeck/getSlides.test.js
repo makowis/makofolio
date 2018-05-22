@@ -2,7 +2,7 @@
 // @flow
 import nock from 'nock';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { toSpeakerdeckID } from '@makofolio/speakerdeck/models/SpeakerdeckID';
+import { toSpeakerdeckID } from './models/SpeakerdeckID';
 import getSlides from './getSlides';
 
 it('renders App', () => {

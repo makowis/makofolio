@@ -1,8 +1,8 @@
 // @flow
 import axios from 'axios';
-import type { SpeakerdeckID } from '@makofolio/speakerdeck/models/SpeakerdeckID';
+import type { SpeakerdeckID } from './models/SpeakerdeckID';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { feedURL as speakerdeckFeedURL } from '@makofolio/speakerdeck/feedURL';
+import { feedURL as speakerdeckFeedURL } from './feedURL';
 
 const yqlQuery = (url: string) => `select * from xml where url = '${url}'`;
 const yqlURL = 'https://query.yahooapis.com/v1/public/yql';
