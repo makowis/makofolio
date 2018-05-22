@@ -2,8 +2,9 @@
 // @flow
 import React from 'react';
 import renderer from 'react-test-renderer';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { toGitHubID } from '@makofolio/github/models/GitHubID';
 import GithubLinkButton from './GithubLinkButton';
-import { toGitHubID } from '../../github/models/GitHubID';
 
 it('renders GithubLinkButton', () => {
   const tree = renderer

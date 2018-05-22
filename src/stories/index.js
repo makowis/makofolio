@@ -7,12 +7,12 @@ import { withNotes } from '@storybook/addon-notes';
 import fontawesome from '@fortawesome/fontawesome';
 import brands from '@fortawesome/fontawesome-free-brands';
 import { toTwitterID } from '@makofolio/twitter/models/TwitterID';
+import { toGitHubID } from '@makofolio/github/models/GitHubID';
 
 import TwitterLinkButton from '../components/SnsLinkButton/TwitterLinkButton';
 import FacebookLinkButton from '../components/SnsLinkButton/FacebookLinkButton';
 import { toFacebookID } from '../facebook/models/FacebookID';
 import GithubLinkButton from '../components/SnsLinkButton/GithubLinkButton';
-import { toGitHubID } from '../github/models/GitHubID';
 
 fontawesome.library.add(brands);
 

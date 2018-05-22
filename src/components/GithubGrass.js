@@ -1,8 +1,9 @@
 // @flow
 import React from 'react';
-import { toString } from '../github/models/GitHubID';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { toString } from '@makofolio/github/models/GitHubID';
+import type { GitHubID } from '@makofolio/github/models/GitHubID';
 import type { Person as Model } from '../models/Person';
-import type { GitHubID } from '../github/models/GitHubID';
 
 const imageURL = (github: GitHubID): string =>
   `https://grass-graph.moshimo.works/images/${toString(github)}.png`;

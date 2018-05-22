@@ -6,9 +6,10 @@ import type { SpeakerdeckID } from '@makofolio/speakerdeck/models/SpeakerdeckID'
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { toTwitterID } from '@makofolio/twitter/models/TwitterID';
 import type { TwitterID } from '@makofolio/twitter/models/TwitterID';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { toGitHubID } from '@makofolio/github/models/GitHubID';
+import type { GitHubID } from '@makofolio/github/models/GitHubID';
 import avatar from '../img/avatar.bmp';
-import type { GitHubID } from '../github/models/GitHubID';
-import { toGitHubID } from '../github/models/GitHubID';
 import type { FacebookID } from '../facebook/models/FacebookID';
 import { toFacebookID } from '../facebook/models/FacebookID';
 
