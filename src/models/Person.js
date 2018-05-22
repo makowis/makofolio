@@ -9,9 +9,10 @@ import type { TwitterID } from '@makofolio/twitter/models/TwitterID';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { toGitHubID } from '@makofolio/github/models/GitHubID';
 import type { GitHubID } from '@makofolio/github/models/GitHubID';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { toFacebookID } from '@makofolio/facebook/models/FacebookID';
+import type { FacebookID } from '@makofolio/facebook/models/FacebookID';
 import avatar from '../img/avatar.bmp';
-import type { FacebookID } from '../facebook/models/FacebookID';
-import { toFacebookID } from '../facebook/models/FacebookID';
 
 export type PersonParams = {
   id: string,
