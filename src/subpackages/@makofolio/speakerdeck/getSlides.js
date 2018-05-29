@@ -4,7 +4,8 @@ import type { SpeakerdeckID } from './models/SpeakerdeckID';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { feedURL as speakerdeckFeedURL } from './feedURL';
 
-const yqlQuery = (url: string) => `select * from xml where url = '${url}'`;
+const yqlQuery = (url: string): string =>
+  `select * from xml where url = '${url}'`;
 const yqlURL = 'https://query.yahooapis.com/v1/public/yql';
 
 export type Entry = {
@@ -23,14 +24,17 @@ export type Entry = {
   },
 };
 
+const getYQL = (q: string) =>
+  axios.get(yqlURL, {
+    params: {
+      q,
+      format: 'json',
+    },
+  });
+
 const getSlides = async (speakerdeck: SpeakerdeckID): Promise<Entry[]> =>
-  axios
-    .get(yqlURL, {
-      params: {
-        q: yqlQuery(speakerdeckFeedURL(speakerdeck)),
-        format: 'json',
-      },
-    })
-    .then((res) => res.data.query.results.feed.entry);
+  getYQL(yqlQuery(speakerdeckFeedURL(speakerdeck))).then(
+    (res) => res.data.query.results.feed.entry,
+  );
 
 export default getSlides;
