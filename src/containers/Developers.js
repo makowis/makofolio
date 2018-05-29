@@ -22,6 +22,9 @@ const mapDispatchToProps = (dispatch: Dispatch) => ({
   },
 });
 
-const Developers = connect(mapStateToProps, mapDispatchToProps)(Component);
+const Developers = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Component);
 
 export default Developers;

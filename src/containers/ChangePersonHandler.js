@@ -38,8 +38,9 @@ const mapDispatchToProps = (dispatch: Dispatch) => ({
   onChangePerson: changeSlidesBuilder(dispatch),
 });
 
-const ChangePersonHandler = connect(mapStateToProps, mapDispatchToProps)(
-  Component,
-);
+const ChangePersonHandler = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Component);
 
 export default ChangePersonHandler;
