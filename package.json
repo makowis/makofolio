@@ -49,7 +49,7 @@
     "i": "0.3.6",
     "nock": "9.2.6",
     "npm": "6.1.0",
-    "prettier": "1.13.2",
+    "prettier": "1.13.4",
     "react-test-renderer": "16.4.0",
     "redux-devtools": "3.4.1",
     "redux-devtools-dock-monitor": "1.1.3",
