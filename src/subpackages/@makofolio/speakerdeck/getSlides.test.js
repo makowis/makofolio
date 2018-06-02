@@ -1,18 +1,40 @@
 /* eslint-env jest */
 // @flow
-import nock from 'nock';
+import mockAxios from 'jest-mock-axios';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { toSpeakerdeckID } from './models/SpeakerdeckID';
 import getSlides from './getSlides';
 
-it('renders App', () => {
+afterEach(() => {
+  // cleaning up the mess left behind the previous test
+  mockAxios.reset();
+});
+
+it('renders App', async () => {
   const speakerdeckId = toSpeakerdeckID('makowis');
-  nock('https://query.yahooapis.com')
-    .get('/v1/public/yql')
-    .query({
-      q: "select * from xml where url = 'https://speakerdeck.com/makowis.atom'",
-      format: 'json',
-    })
-    .reply(200, { query: { results: { feed: { entry: [] } } } });
-  getSlides(speakerdeckId);
+  const res = getSlides(speakerdeckId);
+  const entry = ['entry'];
+  mockAxios.mockResponse({
+    data: {
+      query: {
+        results: {
+          feed: {
+            entry,
+          },
+        },
+      },
+    },
+  });
+  expect(mockAxios.get).toHaveBeenCalledWith(
+    'https://query.yahooapis.com/v1/public/yql',
+    {
+      params: {
+        q:
+          "select * from xml where url = 'https://speakerdeck.com/makowis.atom'",
+        format: 'json',
+      },
+    },
+  );
+
+  expect(await res).toBe(entry);
 });

@@ -19,6 +19,10 @@ module.exports = {
     },
   },
   rules: {
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: ['**/__mocks__/*.js', '**/*.test.js'] },
+    ],
     'flowtype/require-valid-file-annotation': ['error', 'always'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
   },

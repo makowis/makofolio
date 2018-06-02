@@ -47,6 +47,7 @@
     "eslint-plugin-react": "7.8.2",
     "flow-bin": "0.73.0",
     "i": "0.3.6",
+    "jest-mock-axios": "2.1.11",
     "nock": "9.2.6",
     "npm": "6.1.0",
     "prettier": "1.13.2",
