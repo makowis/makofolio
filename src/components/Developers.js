@@ -1,11 +1,15 @@
 // @flow
 import React from 'react';
+import Button from '@material/react-fab/dist';
+import '@material/react-fab/dist/fab.css';
 import Avatar from './Avatar';
 import { developers as className } from './Developers.css';
 import type { Person } from '../models/Person';
 
 const AvatarForPerson = ({ avatar, name, ...rest }: Person) => (
-  <Avatar {...{ ...rest, src: avatar, alt: name }} />
+  <Button>
+    <Avatar {...{ ...rest, src: avatar, alt: name, raised: true }} />
+  </Button>
 );
 
 type Props = {
@@ -20,8 +24,8 @@ const Developers = ({ people, onPersonClick }: Props) => (
         {...person}
         key={person.id}
         onClick={onPersonClick(person)}
-        width={40}
-        height={40}
+        width={60}
+        height={60}
       />
     ))}
   </div>
