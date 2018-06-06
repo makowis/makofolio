@@ -163,48 +163,87 @@ exports[`renders App 1`] = `
       <div
         className={undefined}
       >
-        <img
-          alt="Makoto Henmi"
-          className={undefined}
-          facebook="makoto.henmi"
-          github="makowis"
-          height={40}
-          id="mako_wis"
-          nickname="mako_wis"
-          onClick={[Function]}
-          speakerdeck="makowis"
-          src="avatar.bmp"
-          twitter="mako_wis"
-          width={40}
-        />
-        <img
-          alt="Tomohiko Himura"
-          className={undefined}
-          facebook="eielh"
-          github="eiel"
-          height={40}
-          id="eiel"
-          nickname="eiel"
-          onClick={[Function]}
-          speakerdeck="eiel"
-          src="https://pbs.twimg.com/profile_images/2754435592/6fef2556bc06febd5c6ab4c24ae08282_400x400.jpeg"
-          twitter="eielh"
-          width={40}
-        />
-        <img
-          alt="Yukinori Kitadai"
-          className={undefined}
-          facebook="Nyoho"
-          github="Nyoho"
-          height={40}
-          id="Nyoho"
-          nickname="Nyoho"
-          onClick={[Function]}
-          speakerdeck="Nyoho"
-          src="https://avatars2.githubusercontent.com/u/118150"
-          twitter="NeXTSTEP2OSX"
-          width={40}
-        />
+        <button
+          className="mdc-fab "
+          disabled={false}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          style={Object {}}
+        >
+          <img
+            alt="Makoto Henmi"
+            className={undefined}
+            facebook="makoto.henmi"
+            github="makowis"
+            height={60}
+            id="mako_wis"
+            nickname="mako_wis"
+            onClick={[Function]}
+            raised={true}
+            speakerdeck="makowis"
+            src="avatar.bmp"
+            twitter="mako_wis"
+            width={60}
+          />
+        </button>
+        <button
+          className="mdc-fab "
+          disabled={false}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          style={Object {}}
+        >
+          <img
+            alt="Tomohiko Himura"
+            className={undefined}
+            facebook="eielh"
+            github="eiel"
+            height={60}
+            id="eiel"
+            nickname="eiel"
+            onClick={[Function]}
+            raised={true}
+            speakerdeck="eiel"
+            src="https://pbs.twimg.com/profile_images/2754435592/6fef2556bc06febd5c6ab4c24ae08282_400x400.jpeg"
+            twitter="eielh"
+            width={60}
+          />
+        </button>
+        <button
+          className="mdc-fab "
+          disabled={false}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          style={Object {}}
+        >
+          <img
+            alt="Yukinori Kitadai"
+            className={undefined}
+            facebook="Nyoho"
+            github="Nyoho"
+            height={60}
+            id="Nyoho"
+            nickname="Nyoho"
+            onClick={[Function]}
+            raised={true}
+            speakerdeck="Nyoho"
+            src="https://avatars2.githubusercontent.com/u/118150"
+            twitter="NeXTSTEP2OSX"
+            width={60}
+          />
+        </button>
       </div>
     </section>
   </main>

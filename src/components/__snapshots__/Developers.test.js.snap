@@ -4,19 +4,32 @@ exports[`renders Developers 1`] = `
 <div
   className={undefined}
 >
-  <img
-    alt="Makoto Henmi"
-    className={undefined}
-    facebook="makoto.henmi"
-    github="makowis"
-    height={40}
-    id="mako_wis"
-    nickname="mako_wis"
-    onClick={[Function]}
-    speakerdeck="makowis"
-    src="avatar.bmp"
-    twitter="mako_wis"
-    width={40}
-  />
+  <button
+    className="mdc-fab "
+    disabled={false}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchStart={[Function]}
+    style={Object {}}
+  >
+    <img
+      alt="Makoto Henmi"
+      className={undefined}
+      facebook="makoto.henmi"
+      github="makowis"
+      height={60}
+      id="mako_wis"
+      nickname="mako_wis"
+      onClick={[Function]}
+      raised={true}
+      speakerdeck="makowis"
+      src="avatar.bmp"
+      twitter="mako_wis"
+      width={60}
+    />
+  </button>
 </div>
 `;
