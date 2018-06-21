@@ -197,9 +197,9 @@
     global "^4.3.2"
     prop-types "^15.6.1"
 
-"@storybook/addon-notes@3.4.8":
-  version "3.4.8"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-3.4.8.tgz#059be3d1010e6278730867d9e45b047713ccb5b9"
+"@storybook/addon-notes@3.4.7":
+  version "3.4.7"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-3.4.7.tgz#4837724301ef6830e9b643d67b287d0e9fa2c7f8"
   dependencies:
     babel-runtime "^6.26.0"
     marked "^0.3.17"
