@@ -4,8 +4,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import backgrounds from '@storybook/addon-backgrounds';
 import { withNotes } from '@storybook/addon-notes';
-import fontawesome from '@fortawesome/fontawesome';
-import brands from '@fortawesome/fontawesome-free-brands';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import { toTwitterID } from '@makofolio/twitter/models/TwitterID';
 import { toGitHubID } from '@makofolio/github/models/GitHubID';
 import { toFacebookID } from '@makofolio/facebook/models/FacebookID';
@@ -14,7 +14,7 @@ import TwitterLinkButton from '../components/SnsLinkButton/TwitterLinkButton';
 import FacebookLinkButton from '../components/SnsLinkButton/FacebookLinkButton';
 import GithubLinkButton from '../components/SnsLinkButton/GithubLinkButton';
 
-fontawesome.library.add(brands);
+library.add(fab);
 
 storiesOf('SNSLinkButton', module)
   .addDecorator(
