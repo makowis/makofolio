@@ -25,5 +25,6 @@ module.exports = {
     ],
     'flowtype/require-valid-file-annotation': ['error', 'always'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-one-expression-per-line': 'off', // conflict prettier
   },
 };

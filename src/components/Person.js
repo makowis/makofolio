@@ -4,7 +4,7 @@ import {
   TwitterLinkButton,
   FacebookLinkButton,
   GithubLinkButton,
-} from '../components/SnsLinkButton/';
+} from './SnsLinkButton';
 import type { Person as Model } from '../models/Person';
 
 export const Person = ({
