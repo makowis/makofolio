@@ -1,5 +1,5 @@
 // @flow
-import fontawesome from '@fortawesome/fontawesome';
-import brands from '@fortawesome/fontawesome-free-brands';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
-fontawesome.library.add(brands);
+library.add(fab);

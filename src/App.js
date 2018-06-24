@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
-import fontawesome from '@fortawesome/fontawesome';
-import brands from '@fortawesome/fontawesome-free-brands';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
 import Person from './containers/Person';
 import Developers from './containers/Developers';
@@ -9,7 +9,7 @@ import GithubGrass from './containers/GithubGrass';
 import Slides from './containers/Slides';
 import ChangePersonHandler from './containers/ChangePersonHandler';
 
-fontawesome.library.add(brands);
+library.add(fab);
 
 const App = () => (
   <div>
