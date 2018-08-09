@@ -50,7 +50,7 @@
     "i": "0.3.6",
     "jest-mock-axios": "2.1.11",
     "npm": "6.3.0",
-    "prettier": "1.14.0",
+    "prettier": "1.14.2",
     "react-test-renderer": "16.4.2",
     "redux-devtools": "3.4.1",
     "redux-devtools-dock-monitor": "1.1.3",
