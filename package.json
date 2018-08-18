@@ -46,7 +46,7 @@
     "eslint-plugin-jsx-a11y": "6.1.1",
     "eslint-plugin-prettier": "2.6.2",
     "eslint-plugin-react": "7.11.1",
-    "flow-bin": "0.78.0",
+    "flow-bin": "0.79.1",
     "i": "0.3.6",
     "jest-mock-axios": "2.1.11",
     "npm": "6.4.0",
