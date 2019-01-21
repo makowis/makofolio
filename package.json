@@ -49,7 +49,7 @@
     "flow-bin": "0.79.1",
     "i": "0.3.6",
     "jest-mock-axios": "2.1.11",
-    "npm": "6.4.1",
+    "npm": "6.6.0",
     "prettier": "1.15.3",
     "react-test-renderer": "16.6.3",
     "redux-devtools": "3.4.2",
