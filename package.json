@@ -9,7 +9,7 @@
     "@fortawesome/react-fontawesome": "0.1.4",
     "@material/react-fab": "0.2.0",
     "axios": "0.18.0",
-    "bootstrap": "4.2.1",
+    "bootstrap": "4.3.1",
     "history": "4.7.2",
     "htmlparser2": "3.10.1",
     "react": "16.7.0",
