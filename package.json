@@ -10,7 +10,7 @@
     "@material/react-fab": "0.2.0",
     "axios": "0.18.0",
     "bootstrap": "4.3.1",
-    "history": "4.7.2",
+    "history": "4.9.0",
     "htmlparser2": "3.10.1",
     "react": "16.8.3",
     "react-dom": "16.8.3",
