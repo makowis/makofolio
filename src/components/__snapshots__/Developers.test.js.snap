@@ -5,8 +5,11 @@ exports[`renders Developers 1`] = `
   className={undefined}
 >
   <button
-    className="mdc-fab "
+    className="mdc-fab"
     disabled={false}
+    icon={null}
+    onBlur={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
     onMouseDown={[Function]}
@@ -14,22 +17,6 @@ exports[`renders Developers 1`] = `
     onTouchEnd={[Function]}
     onTouchStart={[Function]}
     style={Object {}}
-  >
-    <img
-      alt="Makoto Henmi"
-      className={undefined}
-      facebook="makoto.henmi"
-      github="makowis"
-      height={60}
-      id="mako_wis"
-      nickname="mako_wis"
-      onClick={[Function]}
-      raised={true}
-      speakerdeck="makowis"
-      src="avatar.bmp"
-      twitter="mako_wis"
-      width={60}
-    />
-  </button>
+  />
 </div>
 `;
