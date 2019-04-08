@@ -7566,9 +7566,9 @@ jest-message-util@^20.0.3:
     micromatch "^2.3.11"
     slash "^1.0.0"
 
-jest-mock-axios@2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/jest-mock-axios/-/jest-mock-axios-2.3.0.tgz#f871b0b67c751edb8dbc607d4bf99c919e7dc734"
+jest-mock-axios@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/jest-mock-axios/-/jest-mock-axios-2.4.0.tgz#bc97b7010ffaee15f99cd881cecb43f31365691f"
   dependencies:
     jest-mock-promise "^1.0.23"
 
