@@ -2,7 +2,7 @@
 
 exports[`renders GithubLinkButton 1`] = `
 <a
-  className={undefined}
+  className="GithubLinkButton"
   href="https://github.com/makowis"
 >
   <svg

@@ -2,7 +2,7 @@
 
 exports[`renders TwitterLinkButton 1`] = `
 <a
-  className={undefined}
+  className="TwitterLinkButton"
   href="https://twitter.com/mako_wis"
 >
   <svg
