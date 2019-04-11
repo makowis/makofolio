@@ -6,6 +6,7 @@
 <a href="https://github.com/makowis/makofolio/graphs/contributors">
   <img src="https://img.shields.io/github/contributors/makowis/makofolio.svg" />
 </a>
+[![codecov](https://codecov.io/gh/makowis/makofolio/branch/master/graph/badge.svg)](https://codecov.io/gh/makowis/makofolio)
 
 https://makowis.com/
 
