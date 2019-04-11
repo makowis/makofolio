@@ -3,7 +3,6 @@
 exports[`renders Avatar 1`] = `
 <img
   alt="Example"
-  className={undefined}
   src="http://example.com/hoge.png"
 />
 `;

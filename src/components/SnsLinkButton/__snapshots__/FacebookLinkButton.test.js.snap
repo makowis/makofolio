@@ -2,7 +2,7 @@
 
 exports[`renders FacebookLinkButton 1`] = `
 <a
-  className={undefined}
+  className="FacebookLinkButton"
   href="https://www.facebook.com/makoto.henmi"
 >
   <svg

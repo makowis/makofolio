@@ -2,7 +2,7 @@
 
 exports[`Storyshots SNSLinkButton FacebookLinkButton 1`] = `
 <a
-  className={undefined}
+  className="FacebookLinkButton"
   href="https://www.facebook.com/makoto.henmi"
 >
   <svg
@@ -26,7 +26,7 @@ exports[`Storyshots SNSLinkButton FacebookLinkButton 1`] = `
 
 exports[`Storyshots SNSLinkButton GitHubLinkButton 1`] = `
 <a
-  className={undefined}
+  className="GithubLinkButton"
   href="https://github.com/makowis"
 >
   <svg
@@ -50,7 +50,7 @@ exports[`Storyshots SNSLinkButton GitHubLinkButton 1`] = `
 
 exports[`Storyshots SNSLinkButton TwitterLinkButton 1`] = `
 <a
-  className={undefined}
+  className="TwitterLinkButton"
   href="https://twitter.com/mako_wis"
 >
   <svg

@@ -29,7 +29,7 @@ exports[`renders Person 1`] = `
         className="list-inline-item"
       >
         <a
-          className={undefined}
+          className="TwitterLinkButton"
           href="https://twitter.com/mako_wis"
         >
           <svg
@@ -54,7 +54,7 @@ exports[`renders Person 1`] = `
         className="list-inline-item"
       >
         <a
-          className={undefined}
+          className="FacebookLinkButton"
           href="https://www.facebook.com/makoto.henmi"
         >
           <svg
@@ -79,7 +79,7 @@ exports[`renders Person 1`] = `
         className="list-inline-item"
       >
         <a
-          className={undefined}
+          className="GithubLinkButton"
           href="https://github.com/makowis"
         >
           <svg

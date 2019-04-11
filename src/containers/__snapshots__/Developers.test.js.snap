@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders Person Developers 1`] = `
-<div
-  className={undefined}
->
+<div>
   <button
     className="mdc-fab "
     disabled={false}
@@ -17,7 +15,6 @@ exports[`renders Person Developers 1`] = `
   >
     <img
       alt="Makoto Henmi"
-      className={undefined}
       facebook="makoto.henmi"
       github="makowis"
       height={60}
@@ -44,7 +41,6 @@ exports[`renders Person Developers 1`] = `
   >
     <img
       alt="Tomohiko Himura"
-      className={undefined}
       facebook="eielh"
       github="eiel"
       height={60}
@@ -71,7 +67,6 @@ exports[`renders Person Developers 1`] = `
   >
     <img
       alt="Yukinori Kitadai"
-      className={undefined}
       facebook="Nyoho"
       github="Nyoho"
       height={60}
