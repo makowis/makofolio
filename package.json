@@ -37,7 +37,7 @@
     "@storybook/addons": "4.1.18",
     "@storybook/react": "4.1.18",
     "babel-loader": "8.0.5",
-    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-airbnb": "17.1.1",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-flowtype": "3.11.1",
     "eslint-plugin-import": "2.18.0",
