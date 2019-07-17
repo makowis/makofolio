@@ -30,7 +30,7 @@
   "devDependencies": {
     "@babel/core": "7.5.4",
     "@storybook/addon-actions": "4.1.18",
-    "@storybook/addon-backgrounds": "4.1.18",
+    "@storybook/addon-backgrounds": "5.1.9",
     "@storybook/addon-links": "4.1.18",
     "@storybook/addon-notes": "4.1.18",
     "@storybook/addon-storyshots": "4.1.18",
