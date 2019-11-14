@@ -10,6 +10,7 @@ exports[`renders GithubLinkButton 1`] = `
     className="svg-inline--fa fa-github fa-w-16 "
     data-icon="github"
     data-prefix="fab"
+    focusable="false"
     role="img"
     style={Object {}}
     viewBox="0 0 496 512"

@@ -10,6 +10,7 @@ exports[`renders TwitterLinkButton 1`] = `
     className="svg-inline--fa fa-twitter fa-w-16 "
     data-icon="twitter"
     data-prefix="fab"
+    focusable="false"
     role="img"
     style={Object {}}
     viewBox="0 0 512 512"
