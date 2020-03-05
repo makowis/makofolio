@@ -28,9 +28,9 @@ storiesOf('SNSLinkButton', module)
   )
   .add(
     'FacebookLinkButton',
-    withNotes('クリックで指定ユーザのFacebookプロフィールへ遷移します。')(
-      () => <FacebookLinkButton facebookId={toFacebookID('makoto.henmi')} />,
-    ),
+    withNotes(
+      'クリックで指定ユーザのFacebookプロフィールへ遷移します。',
+    )(() => <FacebookLinkButton facebookId={toFacebookID('makoto.henmi')} />),
   )
   .add(
     'GitHubLinkButton',
