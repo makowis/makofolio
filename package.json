@@ -50,7 +50,7 @@
     "react-test-renderer": "16.13.1",
     "redux-devtools": "3.7.0",
     "redux-devtools-dock-monitor": "1.2.0",
-    "redux-devtools-log-monitor": "1.4.0"
+    "redux-devtools-log-monitor": "2.1.0"
   },
   "browserslist": [
     ">0.2%",
