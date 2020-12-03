@@ -8,7 +8,7 @@
     "@fortawesome/free-solid-svg-icons": "5.15.1",
     "@fortawesome/react-fontawesome": "0.1.11",
     "@material/react-fab": "0.2.0",
-    "axios": "0.20.0",
+    "axios": "0.21.0",
     "bootstrap": "4.5.3",
     "history": "5.0.0",
     "htmlparser2": "3.10.1",
