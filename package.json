@@ -45,7 +45,7 @@
     "eslint-plugin-prettier": "3.3.0",
     "flow-bin": "0.151.0",
     "i": "0.3.6",
-    "jest-mock-axios": "4.2.1",
+    "jest-mock-axios": "4.7.3",
     "prettier": "2.3.0",
     "react-test-renderer": "17.0.1",
     "redux-devtools": "3.7.0",
